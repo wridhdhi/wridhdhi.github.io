@@ -1,0 +1,29 @@
+collections: 
+  authors :
+    output: true
+    
+
+defaults:
+    - scope:
+        path: "" 
+        type: "authors"
+      values:
+        layout: "author_layout"
+
+    - scope:
+        path: ""
+        type: "posts"
+      values:
+        layout: "post"
+    
+    - scope:
+        path: ""
+      values:
+        layout: default
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+production_url : https://github.com/wridhdhi/wridhdhi.github.io.git
+BASE_PATH : https://github.com/wridhdhi/wridhdhi.github.io.git
