@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-06-13T14:25:14+05:30</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Mandatory Hello World!</title><link href="/personal/2019/06/13/Mandatory-Hello_World.html" rel="alternate" type="text/html" title="Mandatory Hello World!" /><published>2019-06-13T13:40:39+05:30</published><updated>2019-06-13T13:40:39+05:30</updated><id>/personal/2019/06/13/Mandatory-Hello_World</id><content type="html" xml:base="/personal/2019/06/13/Mandatory-Hello_World.html">&lt;h1 id=&quot;why-another-blog--that-too-using-jekyll-and-github-pages-&quot;&gt;Why another blog ? That too using jekyll and github pages ?&lt;/h1&gt;
+&lt;p&gt;//&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hello ,World' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;//
+Primarily because I needed a log. Blog might as well be &lt;strong&gt;bullshit-log&lt;/strong&gt; in my case. I learnt CS50 from edX , ended up realizing I need a lot more knowledge and have to buy a domain to publish and write anything. 
+&lt;em&gt;Don’t like wordpress&lt;/em&gt; cuzz sites a heavy with plugins and I hate slow loading. 
+&lt;em&gt;Don’t like blogspot&lt;/em&gt; cuzz it ain’t that customizable with the CSS I want.&lt;/p&gt;
+
+&lt;p&gt;Solution was to learn the whole web-front-backend-jack-of-all-web thing and publish whatever I do somewhere so this blog. Personally I ain’t writing this for anyone but me now. I needed a log of all the mini-projects and stuff I’ve done. Also writing logs on &lt;em&gt;ipython Jupyter-notebooks&lt;/em&gt; became borng and hard to read ,so BLOGS ! 
+  Turns out , I need references and documentation of my own projects because it turns out I forgot PERL which I learnt for my first year project. So I really need a logging system public on the web since a disaster &lt;strong&gt;wiped out my entire hard drive&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This blog is categorized into 3 topics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;#Personal - contains personal trauma, hapiness and experiences ,outlets and social media drama ofc. :D&lt;/li&gt;
+  &lt;li&gt;#Projects - this is serious and gonna contain things I’ve lked and worked on. This is gonna be tough since github only supports static webpages and I need a way to incorporate matlab and other scripts to show data.&lt;/li&gt;
+  &lt;li&gt;#Logs - this is gonna contain all the support logs and everything, from tutorials and issues I’ve faced in my coding tenure from the baby steps to major project problems and how I faced them. This is gonna be huge.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Firstly I need a proper theme. Beginning with this shitty-simple console theme, I need a proper look and feel for the website. Working on it.&lt;/p&gt;
+
+&lt;p&gt;Right now as of today, I need to work on GSoC project that’s Dancing on my head.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For how to create jekyll sites ? 
+[jekyll-docs]: https://jekyllrb.com/docs/home&lt;/p&gt;</content><author><name></name></author><summary type="html">Why another blog ? That too using jekyll and github pages ? // print(&quot;Hello World&quot;) #=&amp;gt; prints 'Hello ,World' to STDOUT. // Primarily because I needed a log. Blog might as well be bullshit-log in my case. I learnt CS50 from edX , ended up realizing I need a lot more knowledge and have to buy a domain to publish and write anything. Don’t like wordpress cuzz sites a heavy with plugins and I hate slow loading. Don’t like blogspot cuzz it ain’t that customizable with the CSS I want.</summary></entry></feed>
