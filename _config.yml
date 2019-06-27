@@ -65,7 +65,7 @@ autopages:
       cased: true
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap

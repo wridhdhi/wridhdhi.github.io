@@ -12,6 +12,7 @@
 - [ ] make a list for tags
 - [ ] modify home page
 - [ ] change **config.yml** for **disqus/mailchimp/and formcarry**
+- [ ] **Look into kramdown and weird parsing of lists**
 
 ## v.0.1
 
@@ -46,7 +47,23 @@
  - GSOC
  - Projects @ IISER
  - Personal Projects
- - 
+
+
+# NOTES:
+
+1. Always use ## for subheadings and `<blockquote>` tags for central blockquote , use `<p> and<cite> ` tags in the blockuote.
+2. Always put image in the front-matter.
+
+
+
+
+
+
+
+
+
+
+
 ```python
 
 
