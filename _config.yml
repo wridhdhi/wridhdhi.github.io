@@ -1,27 +1,26 @@
 # Site/SEO settings
-email: okay@samesies.io
+email: wskarar@gmail.com
 baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-name: Thomas Vaeth
-title: The Barber Theme
-description: >
-  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
-url: http://barber.samesies.io
-twitter_username: thomasvaeth
+name: Wridhdhisom Karar
+title: HOME | Wridhdhisom
+description:  This is my personal homepage containing a log of my projects,personal accounts and small activities
+url: http://wridhdhi.github.io
+twitter_username: wridhz
 default_img: /assets/images/seo.jpg
 social:
   - name: twitter
-    url: https://twitter.com/thomasvaeth
+    url: https://twitter.com/wridhz
   - name: instagram
-    url: https://www.instagram.com/thomas.vaeth/
+    url: https://www.instagram.com/wridhdhi/
   - name: linkedin
-    url: https://www.linkedin.com/in/thomasvaeth/
+    url: https://www.linkedin.com/in/wridhdhisom-karar-6aa04a22/
   - name: github
-    url: https://github.com/samesies
-  - name: codepen
-    url: https://codepen.io/thomasvaeth/
+    url: https://github.com/wridhdhi
+#  - name: codepen
+#    url: https://codepen.io/thomasvaeth/
 
 # Contact settings
 contact_img: /assets/images/placeholder-28.jpg
@@ -36,9 +35,9 @@ mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
 
 # Author settings
 author:
-  - name: Thomas Vaeth
-    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
-    url: http://thomasvaeth.com
+  - name: Wridhdhisom Karar
+    bio: I am a masters student at the Indian Institute of Science Education and Research. Go through this page to know more about me.
+    url: http://wridhdhi.github.io
 
 # Pagination settings
 pagination:
@@ -59,7 +58,7 @@ autopages:
   tags:
     layouts: 
       - 'tag.html'
-    title: 'The Barber Theme'
+    title: ''
     permalink: '/tag/:tag'
     slugify:
       mode: raw
