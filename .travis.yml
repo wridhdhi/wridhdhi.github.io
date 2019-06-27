@@ -1,0 +1,22 @@
+#This is travis script to auto build the site on  #source branch and deploy to mster branch
+language: ruby
+
+# add a ruby container
+rvm:
+  - 2.4.1
+
+#what to install and what script to run
+install: gem install jekyll html-proofer
+script: bundle update && bundle exec jekyll build && htmlproofer ./_site
+
+
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: sources
+  local_dir: _site
+  target_branch: master
