@@ -3,7 +3,11 @@ language: ruby
 
 # add a ruby container
 rvm:
-  - 2.5.1
+  - 2.4.1
+
+before_install:
+  - gem update --system
+  - gem install bundler
 
 #what to install and what script to run
 #install: gem install bundler:2.0.2 jekyll html-proofer

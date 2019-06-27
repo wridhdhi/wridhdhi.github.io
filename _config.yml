@@ -82,3 +82,6 @@ exclude:
   - gulpfile.js
   - package.json
   - README.md
+  - wridhdhi.github.io-log.md
+  - CI
+  - vendor
