@@ -3,11 +3,11 @@ language: ruby
 
 # add a ruby container
 rvm:
-  - 2.4.1
+  - 2.5.1
 
 #what to install and what script to run
-install: gem install jekyll html-proofer
-script: jekyll build && htmlproofer ./_site
+#install: gem install bundler:2.0.2 jekyll html-proofer
+script: ./CI/travis.sh
 
 
 
