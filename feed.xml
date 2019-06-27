@@ -5,8 +5,8 @@
     <description>This is my personal homepage containing a log of my projects,personal accounts and small activities</description>
     <link>http://wridhdhi.github.io</link>
     <atom:link href="http://wridhdhi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Jun 2019 23:33:06 +0530</pubDate>
-    <lastBuildDate>Thu, 27 Jun 2019 23:33:06 +0530</lastBuildDate>
+    <pubDate>Thu, 27 Jun 2019 18:58:46 +0000</pubDate>
+    <lastBuildDate>Thu, 27 Jun 2019 18:58:46 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -112,7 +112,7 @@
 
 &lt;p&gt;I need to create a mini C++ reference for future since this is a great language that I had abandoned for its fresh new cousin , the snake !&lt;/p&gt;
 </description>
-        <pubDate>Tue, 25 Jun 2019 17:44:39 +0530</pubDate>
+        <pubDate>Tue, 25 Jun 2019 12:14:39 +0000</pubDate>
         <link>http://wridhdhi.github.io/2019/06/25/First-Month-gsoc/</link>
         <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/25/First-Month-gsoc/</guid>
         
@@ -191,7 +191,7 @@ And by the 3rd week. I was clear. I revised C++. Turns out I was afraid since I 
 
 &lt;font size=&quot;2&quot; color=&quot;grey&quot;&gt;Disclaimer : The GSOC logo is copyright of Google ; the CERN-HSF logo is copyright of CERN-HSF and not owned by the author. &lt;/font&gt;
 </description>
-        <pubDate>Fri, 14 Jun 2019 17:44:39 +0530</pubDate>
+        <pubDate>Fri, 14 Jun 2019 12:14:39 +0000</pubDate>
         <link>http://wridhdhi.github.io/2019/06/14/First-GSoC-post/</link>
         <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/14/First-GSoC-post/</guid>
         
@@ -244,7 +244,7 @@ Those lithographed silicon &lt;strong&gt;josephson junctions&lt;/strong&gt; its 
 
 &lt;p&gt;I’m just glad I got the chance :) Let’s see how july works out there.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 14 Jun 2019 16:50:39 +0530</pubDate>
+        <pubDate>Fri, 14 Jun 2019 11:20:39 +0000</pubDate>
         <link>http://wridhdhi.github.io/2019/06/14/Tifr-and-quantum/</link>
         <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/14/Tifr-and-quantum/</guid>
         
@@ -311,7 +311,7 @@ Those lithographed silicon &lt;strong&gt;josephson junctions&lt;/strong&gt; its 
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2-Procrastinate/procrastinate-thanos.jpg#full&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 14 Jun 2019 16:50:39 +0530</pubDate>
+        <pubDate>Fri, 14 Jun 2019 11:20:39 +0000</pubDate>
         <link>http://wridhdhi.github.io/2019/06/14/Lets_procrastinate_MORE/</link>
         <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/14/Lets_procrastinate_MORE/</guid>
         
@@ -362,7 +362,7 @@ Primarily because I needed a log. Blog might as well be &lt;strong&gt;bullshit-l
 &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;jekyll-docs&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 13 Jun 2019 13:40:39 +0530</pubDate>
+        <pubDate>Thu, 13 Jun 2019 08:10:39 +0000</pubDate>
         <link>http://wridhdhi.github.io/2019/06/13/Mandatory-Hello_World/</link>
         <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/13/Mandatory-Hello_World/</guid>
         
