@@ -7,7 +7,7 @@ rvm:
 
 #what to install and what script to run
 install: gem install jekyll html-proofer
-script: bundle update && bundle exec jekyll build && htmlproofer ./_site
+script: jekyll build && htmlproofer ./_site
 
 
 

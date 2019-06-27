@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/wridhdhi/wridhdhi.github.io.svg?branch=master)](https://travis-ci.org/wridhdhi/wridhdhi.github.io)
+
 # wridhdhi.github.io
 Personal Website containing all work and projects.
 
