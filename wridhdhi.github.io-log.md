@@ -4,9 +4,6 @@
 
 - [x] ~~make a basic site using **console theme**~~
 - [ ] make the build automatic while pushing to master using travis
-<<<<<<< HEAD
-- [ ] explore the barber-theme
-=======
 - [x] ~~explore the barber-theme~~
 - [x] ~~modified barber theme to change the present CODE theme~~ and deployed.
 - [x] ~~understood site structure and changed config.yml of **barber theme**~~
@@ -16,7 +13,6 @@
 - [ ] modify home page
 - [ ] change **config.yml** for **disqus/mailchimp/and formcarry**
 - [ ] **Look into kramdown and weird parsing of lists**
->>>>>>> wridhdhi
 
 ## v.0.1
 
@@ -30,14 +26,14 @@
     
 4. Note the **_site**_ folder has ** touch .nojekyll** file which means github pages won't render/build it by default
 
-<<<<<<< HEAD
-=======
 ## v0.1.1
 
 1. created a Collection for GSOC and C++ coding
 2. Create a layout for GSOC POSTS
 3. created a tar of the old site on 21:10 @27th June 2019 and copy-pasted files from themes/barber/jekyll @wridhdhi branch
 4. Re-init git and then pushed to github @ sources branch
+5. **HOWEVER pushing a new theme caused conflicts** so resolve conflicts before push
+6. 
 
 ## v0.1.2
 
@@ -69,7 +65,6 @@
 
 
 
->>>>>>> wridhdhi
 
 ```python
 

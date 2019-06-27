@@ -1,5 +1,134 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:8080/" rel="alternate" type="text/html" /><updated>2019-06-14T18:25:21+05:30</updated><id>http://localhost:8080/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">I got accepted for GOOGLE SUMMER OF CODE</title><link href="http://localhost:8080/project/2019/06/14/First-GSoC-post.html" rel="alternate" type="text/html" title="I got accepted for GOOGLE SUMMER OF CODE " /><published>2019-06-14T17:44:39+05:30</published><updated>2019-06-14T17:44:39+05:30</updated><id>http://localhost:8080/project/2019/06/14/First-GSoC-post</id><content type="html" xml:base="http://localhost:8080/project/2019/06/14/First-GSoC-post.html">&lt;h1 id=&quot;yeayyyyyyy-open_mouth-i-got-through-gsoc&quot;&gt;Yeayyyyyyy :open_mouth: I got through &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;GSoC&lt;/a&gt;&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HOME | Wridhdhisom</title>
+    <description>This is my personal homepage containing a log of my projects,personal accounts and small activities</description>
+    <link>http://wridhdhi.github.io</link>
+    <atom:link href="http://wridhdhi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 27 Jun 2019 22:18:07 +0530</pubDate>
+    <lastBuildDate>Thu, 27 Jun 2019 22:18:07 +0530</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>First Month of GSOC</title>
+        <description>&lt;p&gt;This contains everything down to the first evaluations and how I created examples and objects to view, from the raw C code (maybe will turn useful for documentation later.)&lt;/p&gt;
+
+&lt;h3 id=&quot;how-do-you-develop-software-for-open-source-&quot;&gt;How do you develop software for open source ?&lt;/h3&gt;
+&lt;p&gt;This is the first time I’ve developed for open-source and its a hectic thing, not because you think its free and so many people have made it, so how does your tiny contribution matter
+ ?
+ It does, because often you find small &lt;strong&gt;tiny bits&lt;/strong&gt; of code that render the whole software not working.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“like a small variable name was failing my entire build pipeline.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;So its crucial Then how do you do it ?&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;You start by fixing small issues that are open in github/or wherever-its-hosted.&lt;/li&gt;
+  &lt;li&gt;You &lt;strong&gt;build the whole software&lt;/strong&gt; from source-code : this ensures you know how the thing is built and the file structure.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Then you read the DOCUMENTATION&lt;/strong&gt; : this is key because you can’t understand raw-source and what it does on a big picture.&lt;/li&gt;
+  &lt;li&gt;GO through the variables of each source-see what they do. and go through the comments. That will help.&lt;/li&gt;
+  &lt;li&gt;Then finally start&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;CODE&lt;/strong&gt; -&amp;gt; &lt;strong&gt;BUILD&lt;/strong&gt; -&amp;gt; DEBUG -&amp;gt; REPEAT.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;what-happens-when-there-is-no-documentation-&quot;&gt;what happens when there is no documentation ?&lt;/h3&gt;
+
+&lt;p&gt;That’s exactly what I faced working on ACTS, the code is clarified, but there is no documentation. Whatever there is jargon-ish comments about terminologies I don’t even understand. So what to do ?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/6-First_month_GSOC/removal.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nope can’t make heads or tails of it. So in that case it’s best to go backwards.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;GET YOUR MIND CLEAR&lt;/strong&gt; : its gonna be hectic. You’ll take some time to digest it and be clear you really want to dig dirty.&lt;/li&gt;
+  &lt;li&gt;Open &lt;strong&gt;any sourcefile&lt;/strong&gt; : (for my case it was C++ and I use VSCode) and see the:
+    &lt;ul&gt;
+      &lt;li&gt;variables and the methods/functions&lt;/li&gt;
+      &lt;li&gt;class definitions&lt;/li&gt;
+      &lt;li&gt;how the classes are linked/inherited.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is basic because just these 3 simple things will give a gist of what is GOING ON in the source.&lt;/p&gt;
+
+&lt;p&gt;Take a pen and paper / whiteboard:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Draw the classes as boxes.&lt;/li&gt;
+  &lt;li&gt;Fill the boxes with variables and methods&lt;/li&gt;
+  &lt;li&gt;connect different boxes by lines (as how classes inherit or are linked)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Do this for each source file and you’ll get a clear IDEA what is going on.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;TIP :&lt;/strong&gt; VSCode lets you &lt;strong&gt;peek-definitions&lt;/strong&gt; of any variable and lists them in the &lt;strong&gt;OUTLINE&lt;/strong&gt; so that makes it easier to see the links.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h3 id=&quot;now-you-know-what-is-going-on-how-to-begin-coding-&quot;&gt;Now you know what is going on. How to begin coding ?&lt;/h3&gt;
+
+&lt;p&gt;For the first month coding was very difficult from me because I was from a python village, and moving to a new C++ity was quite challenging. It took  a bit used to.&lt;/p&gt;
+
+&lt;p&gt;So C++ has :&lt;/p&gt;
+
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt; headers(.hpp) and sources(.cpp)&lt;/li&gt;
+&lt;li&gt; includes (preprocessors) linking headers and libraries to sources&lt;/li&gt;
+&lt;li&gt; Namespaces&lt;/li&gt;
+&lt;li&gt; Templates -&amp;gt; classes -&amp;gt; subclasses&lt;/li&gt;
+&lt;li&gt; Pointers(unique_ptr , shared_ptr ) and References&lt;/li&gt;
+&lt;li&gt; Then finally **PUBLIC and PRIVATE** :
+  &lt;ul&gt;
+    &lt;li&gt; static and consts:&lt;/li&gt;
+    &lt;li&gt; variables such as
+      &lt;ul&gt;
+      &lt;li&gt; structs , vectors, strings and other primitive babies(datatypes)&lt;/li&gt;
+       &lt;li&gt; methods with any made/primitive return type.&lt;/li&gt;
+      &lt;/ul&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So you know these you know mostly everything in C++. So if you want to code, in a project where there is no documentation, I suggest the reverse method that I follow.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First decide the &lt;strong&gt;method&lt;/strong&gt; and write it,&lt;/li&gt;
+  &lt;li&gt;then the &lt;strong&gt;variables&lt;/strong&gt; the method needs,&lt;/li&gt;
+  &lt;li&gt;and the &lt;strong&gt;parameters&lt;/strong&gt; .&lt;/li&gt;
+  &lt;li&gt;Next define the &lt;strong&gt;pointers , structs , variables&lt;/strong&gt;,&lt;/li&gt;
+  &lt;li&gt;and wrap it all in a &lt;strong&gt;class&lt;/strong&gt; and call the methods in the &lt;strong&gt;main&lt;/strong&gt;().
+   Then do the rest, put the necessary &lt;strong&gt;includes&lt;/strong&gt; and the &lt;strong&gt;NAMESPACES&lt;/strong&gt; and then re-edit the classes to link them.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I need to create a mini C++ reference for future since this is a great language that I had abandoned for its fresh new cousin , the snake !&lt;/p&gt;
+</description>
+        <pubDate>Tue, 25 Jun 2019 17:44:39 +0530</pubDate>
+        <link>http://wridhdhi.github.io/2019/06/25/First-Month-gsoc/</link>
+        <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/25/First-Month-gsoc/</guid>
+        
+        <category>Project</category>
+        
+        <category>code</category>
+        
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>I got accepted for GOOGLE SUMMER OF CODE </title>
+        <description>&lt;h3 id=&quot;yeayyyyyyy-&quot;&gt;Yeayyyyyyy !&lt;/h3&gt;
+&lt;p&gt;I got through &lt;strong&gt;&lt;a href=&quot;https://summerofcode.withgoogle.com&quot;&gt;GSoC&lt;/a&gt;&lt;/strong&gt; .&lt;/p&gt;
 
 &lt;p&gt;This is fake excitement. Duh. I’m writing this 3 weeks after I got accepted. But yeah this is one thing I’m genuinely happy about. I’m very very happy about this. Maybe the only positive thing that happened to me this year.&lt;/p&gt;
 
@@ -9,49 +138,48 @@
 
 &lt;p&gt;and the work is exhilarating. Its with &lt;a href=&quot;https://hepsoftwarefoundation.org/activities/gsoc.html&quot;&gt;CERN-HSF&lt;/a&gt;. Whooooooo. who expected ? Although I primarily applied for this since I had a good base in programming in C and Python and I really now dont regret programming Python and data-analysis for passing time as it really helped in finishing that task in 4 days (no sleep-no eat style :wink:)&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/images/4-GSOC/GSOC-cern.png#full&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;So that long history of programming kinda did present a gift I never expected.&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Learnt C++ in 8th but I just never went beyond OOP.(2011)&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Then Java in 10th. Atleast for getting a 100 in the ICSE paper :wink: Hated it.(2013)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;
+&lt;code&gt;
+&amp;gt; Learnt C++ in 8th but I just never went beyond OOP.(2011)
+ 
+&amp;gt; Then Java in 10th. Atleast for getting a 100 in the ICSE paper ; Hated it.(2013)
+ 
+&amp;gt; Python for fun in 12th.(2015)
 
-&lt;blockquote&gt;
-  &lt;p&gt;Python for fun in 12th.(2015)&lt;/p&gt;
-&lt;/blockquote&gt;
+&amp;gt; C never left. Again in  'Introduction to Computing 101' . through ended up with a **B**.(2016)
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;C&lt;/strong&gt; never left. Again in &lt;strong&gt;Introduction to Computing 101&lt;/strong&gt; . through ended up with a &lt;strong&gt;B&lt;/strong&gt;.(2016)&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Then first year summer project .Rotted with &lt;strong&gt;PERL&lt;/strong&gt; and SVM. Oh wait. I actually liked PERL. It was cute and simple. Close to bash scripts.(2017)&lt;/p&gt;
-&lt;/blockquote&gt;
+&amp;gt; Then first year summer project .Rotted with **PERL** and SVM. Oh wait. I actually liked PERL. It was cute and simple. Close to bash scripts.(2017)
 
-&lt;blockquote&gt;
-  &lt;p&gt;Then Data-science using &lt;strong&gt;R&lt;/strong&gt; last semester. Arghh How much I hate R.(2019)&lt;/p&gt;
-&lt;/blockquote&gt;
+&amp;gt; Then Data-science using **R** last semester. Arghh How much I hate R.(2019)
 
-&lt;p&gt;So over such a world-tour of programming languages I firmly got through the remaining lane with &lt;strong&gt;CS50Web&lt;/strong&gt; with HTML5,CSS,SASS,Flask,Django,JS, and then finally ended up with MySQL.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So over such a world-tour of programming languages I firmly got through the remaining lane with &lt;strong&gt;CS50Web&lt;/strong&gt; with HTML5, CSS, SASS, Flask, Django, JS, and then finally ended up with MySQL.&lt;/p&gt;
 
 &lt;p&gt;After all this please curse me for making thisblog using Jekyll and Markdown :sob:. All because I don’t like WordPress Plugins and Blogger. Well it’s small but it is mine.&lt;/p&gt;
 
-&lt;h2 id=&quot;why-a-blog-this-late-&quot;&gt;Why a blog this late ?&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Well, the first 2 weeks into coding I was shocked. So Afraid. Intimidated . I hid under the bed and didn’t open my laptop. I was so afraid at the massive source code that CERN writes for their packages. I mean worst of all the source code was RAW. RAW like that RAW GREEN SOUR MANGO, and to top it all the cherry was bitter(the code had no documentation)  I literally had to understand the source code through the comments and class-descriptions. It was a nightmare.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&quot;why-a-blog-this-late-&quot;&gt;Why a blog this late ?&lt;/h3&gt;
+
+&lt;p&gt;Well, the first 2 weeks into coding I was shocked. So Afraid. Intimidated . I hid under the bed and didn’t open my laptop. I was so afraid at the massive source code that CERN writes for their packages. I mean worst of all the source code was RAW. RAW like that RAW GREEN SOUR MANGO, and to top it all the cherry was bitter(the code had no documentation)  I literally had to understand the source code through the comments and class-descriptions. It was a nightmare.&lt;/p&gt;
+
+&lt;p&gt;I wondered everyday they will throw me away. Sack me. Tell me “&lt;em&gt;You can’t do it man “&lt;/em&gt;. I was that afraid. But my mentors are amazing ! Not just my mentors, the people who wrote this insane sources. I contacted them, and then after having that bitter source everyday, I mean I literally used to open up a &lt;code class=&quot;highlighter-rouge&quot;&gt;class source code&lt;/code&gt; and stare at it doing nothing for 3 days. I got it slowly in.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;I wondered everyday they will throw me away. Sack me. Tell me “&lt;em&gt;You can’t do it man “&lt;/em&gt;. I was that afraid. But my mentors are amazing ! Not just my mentors, the people who wrote this insane sources. I contacted them, and then after having that bitter source everyday, I mean I literally used to open up a &lt;code class=&quot;highlighter-rouge&quot;&gt;class source code&lt;/code&gt; and stare at it doing nothing for 3 days. I got it slowly in.&lt;/p&gt;
+&lt;p&gt;
+And by the 3rd week. I was clear. I revised C++. Turns out I was afraid since I wrote C++ so long back I wasn't understanding newer code. Like `shared_ptr` and `map` classes . So a bit of hitting the `refresh button` is all I needed.
+&lt;cite&gt; patience is all I needed &lt;/cite&gt;
+&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;And by the 3rd week. I was clear. I revised C++. Turns out I was afraid since I wrote C++ so long back I wasn’t understanding newer code. Like &lt;code class=&quot;highlighter-rouge&quot;&gt;shared_ptr&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;map&lt;/code&gt; classes . So a bit of hitting the &lt;code class=&quot;highlighter-rouge&quot;&gt;refresh button&lt;/code&gt; is all I needed.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;hr /&gt;
 
-&lt;h2 id=&quot;and-&quot;&gt;and ?&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/4-GSOC/gsoc-cern-hsf.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;and-&quot;&gt;and ?&lt;/h3&gt;
 
 &lt;p&gt;as of yesterday I gulped down all that bitter code in a go and I wrote lines and lines of code. It flows now…like words out of a bestseller author. Now I’m confident. Clear. I understand the code. Atleast I’m not afraid anymore.&lt;/p&gt;
 
@@ -59,55 +187,150 @@
 
 &lt;p&gt;… and I have my secret weapons - &lt;strong&gt;StackExchange and VSCode&lt;/strong&gt;; BOOh ! I’m not afraid anymore.&lt;/p&gt;
 
-&lt;h3 id=&quot;and-thats-why-the-post-today-&quot;&gt;&lt;font align=&quot;right&quot;&gt;...and that's why the post today. &lt;/font&gt;&lt;/h3&gt;</content><author><name></name></author><summary type="html">Yeayyyyyyy :open_mouth: I got through GSoC</summary></entry><entry><title type="html">Lets Procrastinate MORE ?</title><link href="http://localhost:8080/personal/2019/06/14/Lets_procrastinate_MORE.html" rel="alternate" type="text/html" title="Lets Procrastinate MORE ?" /><published>2019-06-14T16:50:39+05:30</published><updated>2019-06-14T16:50:39+05:30</updated><id>http://localhost:8080/personal/2019/06/14/Lets_procrastinate_MORE</id><content type="html" xml:base="http://localhost:8080/personal/2019/06/14/Lets_procrastinate_MORE.html">&lt;h1 id=&quot;its-all&quot;&gt;Its all&lt;/h1&gt;
+&lt;h3 id=&quot;and-thats-why-the-post-today-&quot;&gt;&lt;font align=&quot;right&quot;&gt;...and that's why the post today. &lt;/font&gt;&lt;/h3&gt;
+
+&lt;font size=&quot;2&quot; color=&quot;grey&quot;&gt;Disclaimer : The GSOC logo is copyright of Google ; the CERN-HSF logo is copyright of CERN-HSF and not owned by the author. &lt;/font&gt;
+</description>
+        <pubDate>Fri, 14 Jun 2019 17:44:39 +0530</pubDate>
+        <link>http://wridhdhi.github.io/2019/06/14/First-GSoC-post/</link>
+        <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/14/First-GSoC-post/</guid>
+        
+        <category>GSOC</category>
+        
+        <category>CERN</category>
+        
+        <category>code</category>
+        
+        
+        <category>Project</category>
+        
+      </item>
+    
+      <item>
+        <title>How a small field trip changed everything</title>
+        <description>&lt;h2 id=&quot;what-motivates-me-&quot;&gt;What motivates me ?&lt;/h2&gt;
+
+&lt;p&gt;Lying in my gloomy room and watching TED talks?  &lt;strong&gt;NO&lt;/strong&gt; .&lt;/p&gt;
+
+&lt;p&gt;No matter how many books I read , how many profs I follow and stalk on Twitterati , I’m never gonna get enough motivation until I see it. In the sense, its the people working in motion in that lab environment and machines whirring and the feeling of “work in progress” in the air is often what we need. That’s why maybe work from home never works. If I’m sitting on the gloomy bed on the home computer I’ll never work I’ll just sulk .&lt;/p&gt;
+
+&lt;p&gt;That’s why maybe home and office are two different places for everyone. There’s workplace , workplace ethics, rules, dress, code , and how you behave with your colleagues puts you on a different tone than anyone you’d behaved with if you worked from home. That lack of comfort ; exactly what’s needed to work and prosper. Get the task done.&lt;/p&gt;
+
+&lt;p&gt;And having a boss on your head . Oh ! That’s wonderful atleast you don’t become the king of your own comfort like and stop working at all. That’s why maybe bosses are lazy , find comfort in their offices and often lead to terrible home lives. Just because of the comfort. How easily they can boss around and control the hands and minds of those under him. Being a good boss also is challenging since you have to be your own competition as well as be comforting and caring to those working for you . Understanding their pain and issues is the primary task for someone in that position.&lt;/p&gt;
+
+&lt;h3 id=&quot;back-to-topic&quot;&gt;Back to topic….&lt;/h3&gt;
+
+&lt;p&gt;So I visited the Tata Institute of Fundamental Research , just for asking for a summer experience how it feels to work in a Quantum measurement lab. I’ve always read about&lt;/p&gt;
+
+&lt;font size=&quot;5&quot;&gt;the Three Qubit types :&lt;/font&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/5-TIFR/quanutm-qubits.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Flux&lt;/li&gt;
+  &lt;li&gt;Charge&lt;/li&gt;
+  &lt;li&gt;Phase&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So when you read about &lt;strong&gt;Circuit Quantum Electrodynamics&lt;/strong&gt; and you get to see it happen in the lab its a different feels altogether.When you see the #dilutionRefridgerator . 
+Those lithographed silicon &lt;strong&gt;josephson junctions&lt;/strong&gt; its like how a kid feels when superman stands in front of him . Maybe I went a bit too far :P  But that’s the point.&lt;/p&gt;
+
+&lt;p&gt;The place is amazing, big workshops , old scientists whom you’ve heard just names of , an amazing location at the tip of Bombay in Colaba, and the feel of having the sight of the sea beside you . Its amazing. The person I met was so cool. Too cool for a prof. He’s comforting and a great host, his students are amiable and friendly and the ambience is great for you to do something new. Although all that depends on the funds and how the excitement lasts over a longer duration.&lt;/p&gt;
+
+&lt;p&gt;The excitement eases out and that remains is a lot of boredom and tiredness when that “NEW” no longer feels new. Maybe that’s why PhDs in the end becomes tiring. Although PhD contribution is like a &lt;strong&gt;dot&lt;/strong&gt; in their entire lifetime.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-trip&quot;&gt;The trip.&lt;/h3&gt;
+&lt;p&gt;TIFR has an amazing canteen , facing sea , amazing location , no acommodation and a very small campus.  Cabs are slightly on the expensive side, no Autos but yeah  it’s South Bombay. Its 25 mins from CSTM station and a pretty good weather and people. Overall its one of the best in the country in terms of facility and output.&lt;/p&gt;
+
+&lt;p&gt;I’m just glad I got the chance :) Let’s see how july works out there.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Jun 2019 16:50:39 +0530</pubDate>
+        <link>http://wridhdhi.github.io/2019/06/14/Tifr-and-quantum/</link>
+        <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/14/Tifr-and-quantum/</guid>
+        
+        <category>Personal</category>
+        
+        <category>Life</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
+    
+      <item>
+        <title>Lets Procrastinate MORE ?</title>
+        <description>&lt;h1 id=&quot;its-all&quot;&gt;Its all&lt;/h1&gt;
 
 &lt;h2 id=&quot;during&quot;&gt;during&lt;/h2&gt;
 &lt;h3 id=&quot;lunch-that&quot;&gt;lunch that&lt;/h3&gt;
 &lt;h4 id=&quot;struck-me&quot;&gt;struck me&lt;/h4&gt;
-&lt;p&gt;that I was a procrastinator.
+&lt;p&gt;that I was a &lt;strong&gt;procrastinator&lt;/strong&gt;.
  Why have I screwed up the past 6 semesters ? 
  Why did I go insane before exams and project deadlines and why have I procrastinated about Google Summer of Code’ coding mania or mailing the people I should , 
  why didn’t I land a good summer and not mail early last winter ?&lt;/p&gt;
 
 &lt;p&gt;WHY AM I SO AFRAID to face what I really am ?&lt;/p&gt;
 
-&lt;h1 id=&quot;a-master-procrastinator-flushed&quot;&gt;A MASTER PROCRASTINATOR. :flushed:&lt;/h1&gt;
+&lt;h3 id=&quot;a-master-procrastinator&quot;&gt;A MASTER “PROCRASTINATOR”.&lt;/h3&gt;
+&lt;p&gt;&amp;amp;#128563&lt;/p&gt;
 
-&lt;h3 id=&quot;so-what-happened-at-lunch--pensive&quot;&gt;So what happened at lunch ? :pensive:&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;so-what-happened-at-lunch--pensive&quot;&gt;So what happened at lunch ? :pensive:&lt;/h4&gt;
+
 &lt;p&gt;I met my doc-friend who admist all the healthcare turmoil() going on in my home state,is more stressed about her exams and finding more time to revise daily. Then I realized how less I have to do , and what do I do during rest of the time ?&lt;/p&gt;
 
 &lt;p&gt;I waste it. :pensive:&lt;/p&gt;
 
-&lt;h2 id=&quot;bdw-a-small-detour-&quot;&gt;BDW a small &lt;font style=&quot;color:red&quot;&gt;Detour&lt;/font&gt; ..&lt;/h2&gt;
+&lt;h3 id=&quot;bdw-a-small-detour-&quot;&gt;BDW a small &lt;font style=&quot;color:red&quot;&gt;Detour&lt;/font&gt; ..&lt;/h3&gt;
 &lt;p&gt;I really hate &lt;del&gt;&lt;strong&gt;PIZZA HUT&lt;/strong&gt;&lt;/del&gt; now. I’m never gonna have their shit. Ever. Probably the last time was they used to have UNLIMITED FRIDAY’s and now they claim to make new bases and they have the &lt;strong&gt;99/199 daily offer&lt;/strong&gt; which is again &lt;strong&gt;foolery.&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Firstly in the &lt;strong&gt;'’99’‘&lt;/strong&gt; category you have three shit veg pizzas - margharita , classic corn and classic tomato. Anything you add chicken and even a little more veggies like olives it becomes &lt;strong&gt;199(personal-7inch)/249(medium-10inch)&lt;/strong&gt; ; so basically no non-veg or even capsicum at 99 !!&lt;/p&gt;
 
-&lt;h4 id=&quot;and-no-gap-between-99-and-199--basically-anything-decent-199x2&quot;&gt;and NO GAP BETWEEN 99 and 199 ! basically anything decent =199x2&lt;/h4&gt;
+&lt;h4 id=&quot;and-no-gap-between-99-and-199--basically-anything-decent--199x2&quot;&gt;and NO GAP BETWEEN 99 and 199 ! basically anything decent = 199x2&lt;/h4&gt;
 
 &lt;p&gt;Then suppose you wanna save and have a budget meal under 500 even that’s not possible. Also damn coke is 85 ! one glass !. This is me not ranting just I’m surprised how these chains do such random nonsense. By that logic Dominos is better. They have bivariant chicken at 99 ! and 7 different types. And they have large pizzas at far less prices than a average pizza-hut medium piz.&lt;/p&gt;
 
-&lt;h2 id=&quot;back-to-procrastination-&quot;&gt;BACK to procrastination …&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;back-to-procrastination-&quot;&gt;BACK to procrastination …&lt;/h3&gt;
 &lt;p&gt;See this is exactly what. I detour and write three nonsense rants about shit pizza. Arghhh.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2-Procrastinate/procrastinate.jpg&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Coming back I went through anything YouTube had to offer on this. From &lt;a href=&quot;https://www.youtube.com/watch?v=arj7oStGLkU&quot;&gt;Tim Urban’s TED talk&lt;/a&gt;to &lt;a href=&quot;https://www.youtube.com/watch?v=4x7MkLDGnu8&quot;&gt;Mel Robbin’s scientific logic&lt;/a&gt; how procrastination is a breakable habit I didn’t read a single line in LifeHacker or anywhere. Then I slowly drifted to finding Jekyll Themes for my this page and then… … learning how to write emojis using markdown. Yeah like this  &lt;code class=&quot;highlighter-rouge&quot;&gt;:weary:&lt;/code&gt; –&amp;gt; :weary: See ?&lt;/p&gt;
 
 &lt;p&gt;So yeah. Atleast writing this log is letting me write the nonsense I do(have been doing) which landed me in this wholesome mess. I can’t do anything straight and instant gratification is killing me.&lt;/p&gt;
 
-&lt;h2 id=&quot;way-to-stop-&quot;&gt;Way to stop ?&lt;/h2&gt;
+&lt;h3 id=&quot;way-to-stop-&quot;&gt;Way to stop ?&lt;/h3&gt;
 
 &lt;p&gt;Mannn, I dunn knoww. I never cared. I should just start you know ? GSoC coding, two papers on superZeno effect and hell lot of lectures and simulations on IBMQ,  finishing off MITOCW Algorithms has been postponed and on due since this time past year .Ouff.   I’m tired. Maybe tomorrow ?…&lt;/p&gt;
 
-&lt;h1 id=&quot;no-today&quot;&gt;NO. Today.&lt;/h1&gt;
+&lt;h4 id=&quot;no-today-i-have-to-do-it--myself&quot;&gt;NO. Today. I have to do it . myself.&lt;/h4&gt;
 
-&lt;p&gt;and then write about it.&lt;/p&gt;</content><author><name></name></author><summary type="html">Its all</summary></entry><entry><title type="html">Mandatory Hello World!</title><link href="http://localhost:8080/personal/2019/06/13/Mandatory-Hello_World.html" rel="alternate" type="text/html" title="Mandatory Hello World!" /><published>2019-06-13T13:40:39+05:30</published><updated>2019-06-13T13:40:39+05:30</updated><id>http://localhost:8080/personal/2019/06/13/Mandatory-Hello_World</id><content type="html" xml:base="http://localhost:8080/personal/2019/06/13/Mandatory-Hello_World.html">&lt;h1 id=&quot;why-another-blog--that-too-using-jekyll-and-github-pages-&quot;&gt;Why another blog ? That too using jekyll and github pages ?&lt;/h1&gt;
-=======
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://wridhdhi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wridhdhi.github.io/" rel="alternate" type="text/html" /><updated>2019-06-13T15:03:00+05:30</updated><id>https://wridhdhi.github.io/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Mandatory Hello World!</title><link href="https://wridhdhi.github.io/personal/2019/06/13/Mandatory-Hello_World.html" rel="alternate" type="text/html" title="Mandatory Hello World!" /><published>2019-06-13T13:40:39+05:30</published><updated>2019-06-13T13:40:39+05:30</updated><id>https://wridhdhi.github.io/personal/2019/06/13/Mandatory-Hello_World</id><content type="html" xml:base="https://wridhdhi.github.io/personal/2019/06/13/Mandatory-Hello_World.html">&lt;h1 id=&quot;why-another-blog--that-too-using-jekyll-and-github-pages-&quot;&gt;Why another blog ? That too using jekyll and github pages ?&lt;/h1&gt;
->>>>>>> sources
+&lt;p&gt;and then write about it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2-Procrastinate/procrastinate-thanos.jpg#full&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Jun 2019 16:50:39 +0530</pubDate>
+        <link>http://wridhdhi.github.io/2019/06/14/Lets_procrastinate_MORE/</link>
+        <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/14/Lets_procrastinate_MORE/</guid>
+        
+        <category>Personal</category>
+        
+        <category>Life</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
+    
+      <item>
+        <title>Mandatory Hello World!</title>
+        <description>&lt;h2 id=&quot;why-another-blog--that-too-using-jekyll-and-github-pages-&quot;&gt;Why another blog ? That too using jekyll and github pages ?&lt;/h2&gt;
 &lt;p&gt;//&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#=&amp;gt; prints 'Hello ,World' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hello ,World' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;//
 Primarily because I needed a log. Blog might as well be &lt;strong&gt;bullshit-log&lt;/strong&gt; in my case. I learnt CS50 from edX , ended up realizing I need a lot more knowledge and have to buy a domain to publish and write anything. 
@@ -133,5 +356,24 @@ Primarily because I needed a log. Blog might as well be &lt;strong&gt;bullshit-l
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/images/1-Hello_world/hello-world.jpeg#full&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;For how to create jekyll sites ? 
-[jekyll-docs]: https://jekyllrb.com/docs/home&lt;/p&gt;</content><author><name></name></author><summary type="html">Why another blog ? That too using jekyll and github pages ? // print(&quot;Hello World&quot;) #=&amp;gt; prints 'Hello ,World' to STDOUT. // Primarily because I needed a log. Blog might as well be bullshit-log in my case. I learnt CS50 from edX , ended up realizing I need a lot more knowledge and have to buy a domain to publish and write anything. Don’t like wordpress cuzz sites a heavy with plugins and I hate slow loading. Don’t like blogspot cuzz it ain’t that customizable with the CSS I want.</summary></entry></feed>
+&lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;jekyll-docs&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 13 Jun 2019 13:40:39 +0530</pubDate>
+        <link>http://wridhdhi.github.io/2019/06/13/Mandatory-Hello_World/</link>
+        <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/13/Mandatory-Hello_World/</guid>
+        
+        <category>personal</category>
+        
+        <category>code</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
+    
+  </channel>
+</rss>

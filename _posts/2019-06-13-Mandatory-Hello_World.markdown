@@ -3,10 +3,6 @@ layout: post
 title:  "Mandatory Hello World!"
 date:   2019-06-13 13:40:39 +0530
 categories: Personal
-<<<<<<< HEAD
----
-# Why another blog ? That too using jekyll and github pages ?
-=======
 desciption: 
 image: /assets/images/1-Hello_world/hello-yen.io-main.png
 author: Wridhdhisom Karar
@@ -15,7 +11,6 @@ tags:
   - code
 ---
 ## Why another blog ? That too using jekyll and github pages ?
->>>>>>> wridhdhi
 //
 {% highlight python %}
 print("Hello World")
@@ -47,13 +42,8 @@ Right now as of today, I need to work on GSoC project that's Dancing on my head.
 print("Hello World")
 {% endhighlight %}
 
-<<<<<<< HEAD
-For how to create jekyll sites ? 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-=======
 ![Placeholder](/assets/images/1-Hello_world/hello-world.jpeg#full)
 
 For how to create jekyll sites ? 
 [jekyll-docs](https://jekyllrb.com/docs/home)
->>>>>>> wridhdhi
 
