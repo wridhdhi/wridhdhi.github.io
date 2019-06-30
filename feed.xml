@@ -5,8 +5,8 @@
     <description>This is my personal homepage containing a log of my projects,personal accounts and small activities</description>
     <link>http://wridhdhi.github.io</link>
     <atom:link href="http://wridhdhi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Jun 2019 18:19:52 +0000</pubDate>
-    <lastBuildDate>Sun, 30 Jun 2019 18:19:52 +0000</lastBuildDate>
+    <pubDate>Sun, 30 Jun 2019 18:28:19 +0000</pubDate>
+    <lastBuildDate>Sun, 30 Jun 2019 18:28:19 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -17,12 +17,8 @@
 
 &lt;h4 id=&quot;requirements-&quot;&gt;Requirements :&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;You habe a github pages built using &lt;strong&gt;jekyll&lt;/strong&gt;(or anything else)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Your source code is on &lt;code class=&quot;highlighter-rouge&quot;&gt;sources&lt;/code&gt; branch and you want built &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder to be deployed on the master branch ; so that if anyone visits &lt;code class=&quot;highlighter-rouge&quot;&gt;{yourname}.github.io&lt;/code&gt; , they see your site.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;You habe a github pages built using &lt;strong&gt;jekyll&lt;/strong&gt;(or anything else)&lt;/li&gt;
+  &lt;li&gt;Your source code is on &lt;code class=&quot;highlighter-rouge&quot;&gt;sources&lt;/code&gt; branch and you want built &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder to be deployed on the master branch ; so that if anyone visits &lt;code class=&quot;highlighter-rouge&quot;&gt;{yourname}.github.io&lt;/code&gt; , they see your site.&lt;/li&gt;
   &lt;li&gt;I assume you use ` bundle exec jekyll build&lt;code class=&quot;highlighter-rouge&quot;&gt; in your root project directory to build your site and you copy/push &quot;just&quot; the &lt;/code&gt;_site` folder to the repository to make the site live&lt;/li&gt;
   &lt;li&gt;and you want to automate this process using travis…&lt;/li&gt;
 &lt;/ul&gt;
@@ -30,12 +26,11 @@
 &lt;h4 id=&quot;what-you-want-&quot;&gt;What you want :&lt;/h4&gt;
 &lt;p&gt;Everytime you push to github/&lt;code class=&quot;highlighter-rouge&quot;&gt;sources&lt;/code&gt; branch, &lt;strong&gt;Travis&lt;/strong&gt; will build the site and deploy only the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder to &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; or any other &lt;code class=&quot;highlighter-rouge&quot;&gt;branch&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/7-Travis_GHPages/workflow_github.jpg&quot; alt=&quot;Placeholder&quot; /&gt;
-&amp;lt;font color=”grey” size=3&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/7-Travis_GHPages/workflow_github.jpg&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html&quot; alt=&quot;Image rights and source&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;/font&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;font color=”grey” size=2&amp;gt;
+&amp;lt;a href=https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html &amp;gt;Image rights and source &amp;lt;/a&amp;gt;
+&amp;lt;/font&amp;gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;what-to-do-&quot;&gt;What to do :&lt;/h4&gt;
 &lt;p&gt;There should be &lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file in the sources/project directory so that it automatically triggers a build when you push it ;
@@ -58,12 +53,12 @@ and save it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV _VARIABLE
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;must be in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file because travis installs the gems in the &lt;code class=&quot;highlighter-rouge&quot;&gt;./vendor/bundle&lt;/code&gt; folder.&lt;/p&gt;
+  &lt;p&gt;this must be in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file because travis installs the gems in the &lt;code class=&quot;highlighter-rouge&quot;&gt;./vendor/bundle&lt;/code&gt; folder.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;else that would always break builds like this and your site wont be built properly.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/images/7-Travis_GHPages/travis_not&amp;#32;built.png#full&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/7-Travis_GHPages/travis_not&amp;#32;built.png#full&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
