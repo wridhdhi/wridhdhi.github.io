@@ -5,9 +5,116 @@
     <description>This is my personal homepage containing a log of my projects,personal accounts and small activities</description>
     <link>http://wridhdhi.github.io</link>
     <atom:link href="http://wridhdhi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Jun 2019 07:10:29 +0000</pubDate>
-    <lastBuildDate>Fri, 28 Jun 2019 07:10:29 +0000</lastBuildDate>
+    <pubDate>Sun, 30 Jun 2019 18:19:52 +0000</pubDate>
+    <lastBuildDate>Sun, 30 Jun 2019 18:19:52 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Deplying your github website with Travis</title>
+        <description>&lt;h2 id=&quot;automate-your-github-website-using-travis&quot;&gt;Automate your github website using Travis&lt;/h2&gt;
+
+&lt;p&gt;Now there are many many tutorials out there, honestly non of them worked for me. It all failed ; reasons below. This is an account of how I did it.&lt;/p&gt;
+
+&lt;h4 id=&quot;requirements-&quot;&gt;Requirements :&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;You habe a github pages built using &lt;strong&gt;jekyll&lt;/strong&gt;(or anything else)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Your source code is on &lt;code class=&quot;highlighter-rouge&quot;&gt;sources&lt;/code&gt; branch and you want built &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder to be deployed on the master branch ; so that if anyone visits &lt;code class=&quot;highlighter-rouge&quot;&gt;{yourname}.github.io&lt;/code&gt; , they see your site.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;I assume you use ` bundle exec jekyll build&lt;code class=&quot;highlighter-rouge&quot;&gt; in your root project directory to build your site and you copy/push &quot;just&quot; the &lt;/code&gt;_site` folder to the repository to make the site live&lt;/li&gt;
+  &lt;li&gt;and you want to automate this process using travis…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;what-you-want-&quot;&gt;What you want :&lt;/h4&gt;
+&lt;p&gt;Everytime you push to github/&lt;code class=&quot;highlighter-rouge&quot;&gt;sources&lt;/code&gt; branch, &lt;strong&gt;Travis&lt;/strong&gt; will build the site and deploy only the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder to &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; or any other &lt;code class=&quot;highlighter-rouge&quot;&gt;branch&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/7-Travis_GHPages/workflow_github.jpg&quot; alt=&quot;Placeholder&quot; /&gt;
+&amp;lt;font color=”grey” size=3&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html&quot; alt=&quot;Image rights and source&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/font&amp;gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;what-to-do-&quot;&gt;What to do :&lt;/h4&gt;
+&lt;p&gt;There should be &lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file in the sources/project directory so that it automatically triggers a build when you push it ;
+and deploys to the ` master` branch upon a successful build.&lt;/p&gt;
+
+&lt;p&gt;So , now go to &lt;a href=&quot;https://travis-ci.org&quot;&gt;https://travis-ci.org&lt;/a&gt; ; link your github account and turn on the repository containing your project files/where you want to deploy.&lt;/p&gt;
+
+&lt;p&gt;See the &lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; below.&lt;/p&gt;
+
+&lt;h3 id=&quot;set-up-github-token&quot;&gt;Set Up GITHUB Token&lt;/h3&gt;
+
+&lt;p&gt;get the GITHUB TOKEN from your github account &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; settings &amp;gt; development &amp;gt; tokens&lt;/code&gt;
+and save it in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ENV _VARIABLES&lt;/code&gt; of the dashboard of that repository.&lt;/p&gt;
+
+&lt;h3 id=&quot;also-mandatory&quot;&gt;Also MANDATORY&lt;/h3&gt;
+&lt;p&gt;in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; of your jekyll site add the following line.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;vendor&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;must be in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file because travis installs the gems in the &lt;code class=&quot;highlighter-rouge&quot;&gt;./vendor/bundle&lt;/code&gt; folder.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;else that would always break builds like this and your site wont be built properly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/7-Travis_GHPages/travis_not&amp;#32;built.png#full&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;the--travisyml-file&quot;&gt;the  &lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; FILE&lt;/h1&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;#This is travis script to auto build the site on  #source branch and deploy to mster branch&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ruby&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# add a ruby container&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2.4.1&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bundler&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;-&lt;/span&gt; 
+&lt;span class=&quot;c1&quot;&gt;#what should be done in the VM before install&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;before_install&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gem update --system&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gem install bundler&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; 
+&lt;span class=&quot;c1&quot;&gt;#what to install and what script to run&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#script contains : bundle install&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#                  bundle exec jekyll build&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./CI/travis.sh&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;#this is to deploy from &quot;sources&quot; branch to &quot;master&quot; branch ; change on and target accordingly&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;pages&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;skip_cleanup&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;github_token&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$GITHUB_TOKEN&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Set in the settings page of your repository, as a secure variable&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;keep_history&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;sources&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;local_dir&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;_site&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;target_branch&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;master&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and &lt;code class=&quot;highlighter-rouge&quot;&gt;traviscibot&lt;/code&gt; will deploy successfully.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/7-Travis_GHPages/built.png&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Jun 2019 17:27:39 +0000</pubDate>
+        <link>http://wridhdhi.github.io/2019/06/30/Travis_GHpages/</link>
+        <guid isPermaLink="true">http://wridhdhi.github.io/2019/06/30/Travis_GHpages/</guid>
+        
+        <category>code</category>
+        
+        
+        <category>Logs</category>
+        
+      </item>
     
       <item>
         <title>First Month of GSOC</title>
