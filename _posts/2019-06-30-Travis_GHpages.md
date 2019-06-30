@@ -17,9 +17,7 @@ Now there are many many tutorials out there, honestly non of them worked for me.
 
 #### Requirements :
 - You habe a github pages built using **jekyll**(or anything else)
-
 - Your source code is on `sources` branch and you want built `_site` folder to be deployed on the master branch ; so that if anyone visits `{yourname}.github.io` , they see your site.
-
 - I assume you use ` bundle exec jekyll build` in your root project directory to build your site and you copy/push "just" the `_site` folder to the repository to make the site live
 -  and you want to automate this process using travis...
 
@@ -27,10 +25,9 @@ Now there are many many tutorials out there, honestly non of them worked for me.
 Everytime you push to github/`sources` branch, **Travis** will build the site and deploy only the `_site` folder to `master` or any other `branch`.
 
 ![Placeholder](/assets/images/7-Travis_GHPages/workflow_github.jpg)
-<font color="grey" size=3>
 
-![Image rights and source](https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html)
-
+<font color="grey" size=2>
+<a href=https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html >Image rights and source </a>
 </font>
 
 #### What to do :
@@ -55,11 +52,11 @@ exclude:
   - vendor
 ```
 
->must be in your `_config.yml` file because travis installs the gems in the `./vendor/bundle` folder. 
+>this must be in your `_config.yml` file because travis installs the gems in the `./vendor/bundle` folder. 
 
 else that would always break builds like this and your site wont be built properly.
 
-![Placeholder](../assets/images/7-Travis_GHPages/travis_not&#32;built.png#full)
+![Placeholder](/assets/images/7-Travis_GHPages/travis_not&#32;built.png#full)
 
 ---
 
