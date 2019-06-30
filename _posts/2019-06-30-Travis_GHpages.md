@@ -26,9 +26,10 @@ Everytime you push to github/`sources` branch, **Travis** will build the site an
 
 ![Placeholder](/assets/images/7-Travis_GHPages/workflow_github.jpg)
 
-<font color="grey" size=2>
-<a href=https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html >Image rights and source </a>
-</font>
+
+###### _Image credits :<https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html >_
+
+---
 
 #### What to do :
 There should be `.travis.yml` file in the sources/project directory so that it automatically triggers a build when you push it ;

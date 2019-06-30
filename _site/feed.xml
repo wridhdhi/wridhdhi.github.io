@@ -5,8 +5,8 @@
     <description>This is my personal homepage containing a log of my projects,personal accounts and small activities</description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Jun 2019 23:54:54 +0530</pubDate>
-    <lastBuildDate>Sun, 30 Jun 2019 23:54:54 +0530</lastBuildDate>
+    <pubDate>Mon, 01 Jul 2019 00:03:13 +0530</pubDate>
+    <lastBuildDate>Mon, 01 Jul 2019 00:03:13 +0530</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -28,9 +28,9 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/7-Travis_GHPages/workflow_github.jpg&quot; alt=&quot;Placeholder&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;lt;font color=”grey” size=2&amp;gt;
-&amp;lt;a href=https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html &amp;gt;Image rights and source &amp;lt;/a&amp;gt;
-&amp;lt;/font&amp;gt;&lt;/p&gt;
+&lt;h6 id=&quot;image-credits-httpssavaslabscom20161025deploy-jekyll-with-travishtml-&quot;&gt;&lt;em&gt;Image credits :&lt;a href=&quot;https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html &quot;&gt;https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html &lt;/a&gt;&lt;/em&gt;&lt;/h6&gt;
+
+&lt;hr /&gt;
 
 &lt;h4 id=&quot;what-to-do-&quot;&gt;What to do :&lt;/h4&gt;
 &lt;p&gt;There should be &lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file in the sources/project directory so that it automatically triggers a build when you push it ;
