@@ -3,7 +3,7 @@
 
 
 - [x] ~~make a basic site using **console theme**~~
-- [ ] make the build automatic while pushing to master using travis
+- [x] ~~make the build automatic while pushing to master using travis~~
 - [x] ~~explore the barber-theme~~
 - [x] ~~modified barber theme to change the present CODE theme~~ and deployed.
 - [x] ~~understood site structure and changed config.yml of **barber theme**~~
@@ -33,7 +33,7 @@
 3. created a tar of the old site on 21:10 @27th June 2019 and copy-pasted files from themes/barber/jekyll @wridhdhi branch
 4. Re-init git and then pushed to github @ sources branch
 5. **HOWEVER pushing a new theme caused conflicts** so resolve conflicts before push
-6. 
+6. added travis.yml to the root directory ; ' exclude - vendor ' in config.yml and push to sources; tavis will build automatically.
 
 ## v0.1.2
 
