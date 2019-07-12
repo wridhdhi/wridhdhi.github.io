@@ -5,9 +5,49 @@
     <description>This is my personal homepage containing a log of my projects,personal accounts and small activities</description>
     <link>http://wridhdhi.github.io</link>
     <atom:link href="http://wridhdhi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Jun 2019 18:37:31 +0000</pubDate>
-    <lastBuildDate>Sun, 30 Jun 2019 18:37:31 +0000</lastBuildDate>
+    <pubDate>Fri, 12 Jul 2019 13:40:09 +0000</pubDate>
+    <lastBuildDate>Fri, 12 Jul 2019 13:40:09 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Very Hyper indeed !</title>
+        <description>&lt;h2 id=&quot;youre-very-hyper-and-not-calm&quot;&gt;“You’re very hyper and not calm”&lt;/h2&gt;
+&lt;p&gt;this compliement maybe I’ve been hearing since a long long time. My the cricket coach in class 5, to the tabla teacher in class 9 , and now even my mentor at 22 ! This is a realization and confession post. Most of which is gonna be bore so ,… skip away.&lt;/p&gt;
+
+&lt;p&gt;Basically I love on instant gratification. At least I did until I realize how right the are now; I often get crancy at them for calling me that, but its true, on the first day I need to know the whole plan, the whole battleplan, who goes where, does what ? Maybe half of it’s excitement, and the other half lack of trust (since I’ve been a bad judge of people in the past) . But mostly this behaviour is existant because of my&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;I wanna have it all .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;kind of attitude. I really got myself to learn entire programming packages overnight, software tutorials in a day and I’ve finished coding a whole project 2 days before submission. Ignoring the fact I’m totally unaware of deadlines, but the fact I’ve achieved and attained results (pretty good results) in a short while gives me this feeling that I can finish things fast and hence I should have it all. Bring it on, one after another.&lt;/p&gt;
+
+&lt;p&gt;No. That’s what I’ve realized that I’m doing wrong this summer. I’m losing the most essential quantity.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BREAK.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;else I will break …&lt;/p&gt;
+
+&lt;p&gt;I haven’t taken any holidays or any self-reflection time since January. I’ve been going through exams ,projects,applications for projects , then all nighter coding tears for GSoC and now the remaining july at TIFR , then again back to coursework. Admist this no holidays’ home , nothing I’m giving myself.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-being-so-hard-on-myself-&quot;&gt;Why being so hard on myself ?&lt;/h4&gt;
+&lt;p&gt;I don’t have any reasons to reward myself. That’s what I believe, I didn’t win a trip or a great lottery or an amazing GPA. Nope. Then why take a break ? and not stop until I get it ?&lt;/p&gt;
+
+&lt;p&gt;See? that’s how wrong it sounds ! Without even a day’s break , a week can’t be fruitful, no wonder I didn’t get anything decent either.&lt;/p&gt;
+
+&lt;p&gt;A happy mind is a healthy mind; I can’t do anything if I’m not happy. Nobody can. Its universal .&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Jul 2019 13:00:39 +0000</pubDate>
+        <link>http://wridhdhi.github.io/2019/07/12/very-hyper/</link>
+        <guid isPermaLink="true">http://wridhdhi.github.io/2019/07/12/very-hyper/</guid>
+        
+        <category>personal</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
     
       <item>
         <title>Deplying your github website with Travis</title>
