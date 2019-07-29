@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HOME | Wridhdhisom</title>
-    <description>This is my personal homepage containing a log of my projects,personal accounts and small activities</description>
+    <title>HOME | psiPen</title>
+    <description>the only place I escape to , amidst all the chaos.</description>
     <link>http://wridhdhi.github.io</link>
     <atom:link href="http://wridhdhi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Jul 2019 13:18:52 +0000</pubDate>
-    <lastBuildDate>Mon, 29 Jul 2019 13:18:52 +0000</lastBuildDate>
+    <pubDate>Mon, 29 Jul 2019 14:27:55 +0000</pubDate>
+    <lastBuildDate>Mon, 29 Jul 2019 14:27:55 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
