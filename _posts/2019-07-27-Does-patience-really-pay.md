@@ -6,6 +6,7 @@ description:
 categories: Personal
 image: /assets/images/10-Why-patiently-work-daily/Rome-main.jpg
 author: Wridhdhisom Karar
+comments: true
 tags:
   - 
   - personal

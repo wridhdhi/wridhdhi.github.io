@@ -22,16 +22,16 @@ social:
 #  - name: codepen
 #    url: https://codepen.io/thomasvaeth/
 
-# Contact settings
+# Contact settings UPDATED
 contact_img: /assets/images/placeholder-28.jpg
-formcarry: https://formcarry.com/s/HkIo0nMb7
+formcarry: https://formcarry.com/s/VCbNEYFYEVI
 
 # Disqus settings
-disqus: test-apkdzgmqhj
+disqus: wridhdhi
 
-# MailChimp settings
-mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
-mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
+# MailChimp settings UPDATED
+mailchimp_action: https://gmail.us3.list-manage.com/subscribe/post?u=1b751d10daf28f3028beab9a0&amp;id=b0b51b7ad5
+mailchimp_input: b_1b751d10daf28f3028beab9a0_b0b51b7ad5
 
 # Author settings
 author:
@@ -62,7 +62,7 @@ autopages:
     permalink: '/tag/:tag'
     slugify:
       mode: raw
-      cased: true
+      cased: true`
 
 # Build settings
 #markdown: kramdown
