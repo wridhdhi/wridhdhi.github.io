@@ -5,8 +5,8 @@ permalink: /:year/:month/:day/:title/
 google_analytics: UA-144766159-1
 
 name: Wridhdhisom Karar
-title: HOME | Wridhdhisom
-description:  This is my personal homepage containing a log of my projects,personal accounts and small activities
+title: HOME | psiPen
+description:  the only place I escape to , amidst all the chaos.
 url: http://wridhdhi.github.io
 twitter_username: wridhz
 default_img: /assets/images/seo.jpg
@@ -36,7 +36,8 @@ mailchimp_input: b_1b751d10daf28f3028beab9a0_b0b51b7ad5
 # Author settings
 author:
   - name: Wridhdhisom Karar
-    bio: I am a masters student at the Indian Institute of Science Education and Research. Go through this page to know more about me.
+    bio: who am I, if not the blue pale dot in this utopian battlefield of barabaric bureaucracy. My faint and momentary thoughts quench on all things logical and quantum.
+
     url: http://wridhdhi.github.io
 
 # Pagination settings
