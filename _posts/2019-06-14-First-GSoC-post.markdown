@@ -6,6 +6,7 @@ categories: Project
 desciption: 
 image: /assets/images/4-GSOC/4-GSOC-main.png
 author: Wridhdhisom Karar
+badge: code
 tags: 
   - GSOC
   - CERN

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<!-- This is title TODO :change font please heading --> 
+<section class="post">
+  <div>
+    <div class="post__header section-padding--double">
+      <div class="grid-small">
+        <h2>{{ page.title }}</h2>
+      </div>
+    </div>
+<!-- This is for a page image if any  -->
+    {% if page.image %}
+      <div class="post__img">
+        <div>
+          <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
+        </div>
+      </div>
+    {% endif %}
+
+
+    <div class="post__content section-padding">
+      
+        
+          {{content}}
+       
+      
+    </div>
+  </div>
+</section>

@@ -6,6 +6,9 @@ description:
 categories: Personal
 image: /assets/images/2-Procrastinate/procrastinate-main.png
 author: Wridhdhisom Karar
+badge:
+  - life
+  - personal
 tags:
   - Personal
   - Life

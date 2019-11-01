@@ -9,38 +9,44 @@
 //  Components: Modular components -> Most styles
 //  Utils:      Helper classes, utilities, animations
 //---------------------------------------------- 
-
 //----------------------------------------------
 // Fonts
 //---------------------------------------------- 
 @import 'fonts/_roboto';
+@import 'fonts/_oldStandard';
 @import 'fonts/_lora';
+@import 'fonts/_IMFellEnglish';
+@import 'fonts/_abrilFatface';
+@import 'fonts/_amaticSC';
+@import 'fonts/_crimson';
+@import 'fonts/_archivo';
+@import 'fonts/_lacquer';
+@import 'fonts/_permanentMarker';
+@import 'fonts/_playfairDisplay';
+@import 'fonts/_playfairDisplaySC';
+@import 'fonts/_schoolbell';
+@import 'fonts/_oswald';
 @import 'fonts/_icons';
-
 //----------------------------------------------
 // Tools: Main Config & Global Variables
 //---------------------------------------------- 
 @import 'tools/_config';
-
 //----------------------------------------------
 // Tools: Mixins
 //---------------------------------------------- 
 @import 'tools/_mixins-animations';
 @import 'tools/_mixins-grid';
 @import 'tools/_mixins-type';
-
 //----------------------------------------------
 // Tools: Extends
 //---------------------------------------------- 
 @import 'tools/_extends-type';
 @import 'tools/_extends';
-
 //----------------------------------------------
 // Vendor: Normalize
 //---------------------------------------------- 
 @import 'vendor/_normalize';
 @import 'base/_normalizer';
-
 //----------------------------------------------   
 // Base
 //---------------------------------------------- 
@@ -51,18 +57,15 @@
 @import 'base/_lists';
 @import 'base/_media';
 @import 'base/_typography';
-
 //----------------------------------------------   
 // Vendor
 //----------------------------------------------  
 @import 'vendor/_zoom';
-
 //----------------------------------------------
 // Regions
 //---------------------------------------------- 
 @import 'regions/_footer';
 @import 'regions/_header';
-
 //----------------------------------------------   
 // Components
 //---------------------------------------------- 
@@ -75,8 +78,7 @@
 @import 'components/_related';
 @import 'components/_subscribe';
 @import 'components/_zoom';
-
-//----------------------------------------------   
+//----------------------------------------------  
 // Utils
 //---------------------------------------------- 
 @import 'utils/_animations-keyframes';

@@ -6,6 +6,9 @@ categories: Personal
 desciption: 
 image: /assets/images/1-Hello_world/hello-yen.io-main.png
 author: Wridhdhisom Karar
+badge: 
+  - personal
+  - code
 tags: 
   - personal
   - code

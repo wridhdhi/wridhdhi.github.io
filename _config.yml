@@ -40,6 +40,16 @@ author:
 
     url: http://wridhdhi.github.io
 
+
+collections:
+  physics:
+    output: true
+    permalink: /physics/:path
+  quantum:
+    output: true
+    permalink: /quantum/:path
+
+
 # Pagination settings
 pagination:
   enabled: true
@@ -50,20 +60,25 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+
+
 autopages:
   enabled: true
   categories:
     enabled: false
-  collections:
+  collections: 
     enabled: false
+    # permalink: '/:coll'
+    # slugify:
+    #   mode: raw
+    #   cased: true
+  
   tags:
     layouts: 
       - 'tag.html'
     title: ''
     permalink: '/tag/:tag'
-    slugify:
-      mode: raw
-      cased: true`
+    
 
 # Build settings
 #markdown: kramdown
@@ -74,6 +89,9 @@ compress_html:
   clippings: all
   comments: all
   startings: [html, head, body]
+sass:
+  sass_dir: _sass
+  style: compressed
 exclude:
   - node_modules
   - .DS_Store

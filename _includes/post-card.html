@@ -1,12 +1,53 @@
-<article class="posts__post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-  <a class="posts__link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
+<article class="posts__post " itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <a class="posts__link shadow-lg p-3 mb-5 bg-white rounded" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
     {% if post.image %}
       <figure class="posts__img">
         <img src="{{ post.image }}" alt="{{ post.title }}" data-aos="fade-in" itemprop="image"/>
       </figure>
+      <!-- TODO : if there is no post image, put the title in Bold sans-serif font  -->
     {% endif %}
-    <div>
-      <h2 class="posts__text"><strong itemprop="name">{{ post.title }}</strong> — <span itemprop="description">{{ post.content | strip_html | truncatewords: 35, "" }}</span></h2>
+    <div  style="padding: 2%"><p>
+      <h2 class="posts__text " ><strong itemprop="name">{{ post.title }}</strong> </h2><h3 style="display: inline;">
+      {% for badge in post.badge  %}
+        {% case badge %}
+        {% when 'code' %}
+      <span class="badge badge-primary">code
+        {% when 'personal' %}
+      <span class="badge badge-danger">personal
+      
+        {% when 'life' %}
+      <span class="badge badge-success">life
+      
+        {% when 'physics' %}
+      <span class="badge badge-primary">physics
+      
+        {% when 'theory' %}
+        <span class="badge badge-info">theory
+
+        {% when 'simulation' %}
+      <span class="badge badge-warning">simulation
+      
+        {% when 'quantum' %}
+      <span class="badge badge-danger">quantum
+    
+        {% when 'algorithm' %}
+      <span class="badge badge-light">algorithm
+   
+        {% when 'computing' %}
+      <span class="badge badge-dark">computing/span>
+      
+        {% when 'experiment' %}
+      <span class="badge badge-success">experiment
+      
+        {% else %}
+         
+      {% endcase %}</span>
+ 
+      {% endfor %}
+    </h3>
+      <!-- <span class="badge badge-secondary">Secondary -->
+        
+        <span itemprop="description"> -- {{ post.content | strip_html | truncatewords: 30, "" }} ....  </p>
     </div>
   </a>
 </article>

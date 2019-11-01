@@ -57,7 +57,35 @@
 2. Always put image in the front-matter.
 
 
+## Major changes missing
 
+---
+
+## Font changes
+
+---
+
+
+
+# v1.1.0
+### Following changed 
+- [x] Added navigation for physics and quantum posts
+- [x] changed header title-repeat issue in ```<title>{% if page.title %}{{ page.title | escape }} <removed> {% else %}{{ site.title | escape }}{% endif %}</title>```
+- [x] changed **icon ** of the main site``` <link rel="icon" type="image/x-icon" href="{{ '/assets/images/atom.ico' | prepend: site.baseurl }}">```
+- [x] changed gradient of background in `typography.scss` also in the body
+- [x] added lots of custom CSS, please change them in sass too. 
+- [x] added css for badges classes=` badge badge-primary` and so on.
+- [x] added shadow class from bootstrap for shadow classes=`posts__link shadow-lg p-3 mb-5 bg-white rounded` see the edits done in **`post card.html` in includes**.
+- [x] added border css and also support for rounded borders, however they are added to the link **a href** tag to give the effect.
+- [x] added padding inside post-cards and centered images by editing `post__img` class.
+  
+  ### TODO :
+- [ ] Don't run gulp until you've added all the custom CSS to sass format.
+- [ ] correct spelling errors in posts and refurbish
+- [ ] add the quntum and physics scribble image
+- [ ] start adding posts
+- [ ] try adding CSS and shadow to navigation pane
+- [ ] Images and the grid and flexbox method, but that's post midsem update. Until then no gulpfile.
 
 
 

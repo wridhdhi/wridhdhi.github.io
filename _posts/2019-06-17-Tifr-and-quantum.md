@@ -5,6 +5,7 @@ date:   2019-06-14 16:50:39 +0530
 categories: Personal
 image: /assets/images/5-TIFR/tifr-main.jpg
 author: Wridhdhisom Karar
+badge: life
 tags:
   - Personal
   - Life
