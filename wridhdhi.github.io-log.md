@@ -87,6 +87,10 @@
 - [ ] try adding CSS and shadow to navigation pane
 - [ ] Images and the grid and flexbox method, but that's post midsem update. Until then no gulpfile.
 
+- [ ] GET A CLEAR IDEA OF TEXT AND START UPLOADING CONTENT. 
+- [ ] CREATE A HOME PAGE AND A SEPERATE PAGE FOR STORIES IN NAVIGATION.
+- 
+
 
 
 
