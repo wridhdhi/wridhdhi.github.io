@@ -35,6 +35,9 @@ that I was a **procrastinator**.
 
 I met my doc-friend who admist all the healthcare turmoil() going on in my home state,is more stressed about her exams and finding more time to revise daily. Then I realized how less I have to do , and what do I do during rest of the time ?
 
+
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur esse quisquam maxime! Numquam laudantium fugit hic, nihil blanditiis sed velit, exercitationem ab maxime minus totam esse nesciunt alias cum rem nobis, atque cupiditate ipsam unde odit officia nam harum! Suscipit quod rem eius aspernatur dolorem voluptate dicta quidem maiores id, ea odio veniam ex sit ab laudantium commodi optio at, amet blanditiis tempore. Recusandae molestias repudiandae veniam vero, vitae aut eaque exercitationem alias, excepturi, animi molestiae aspernatur. Recusandae odit dignissimos accusamus in quaerat ad perspiciatis voluptatibus, amet explicabo quis veniam est ex, sapiente pariatur quos nemo iste cumque assumenda ullam.
+
 I waste it. :pensive:
 
 ### BDW a small <font style='color:red'>Detour</font> ..

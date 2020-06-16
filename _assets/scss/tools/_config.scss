@@ -10,32 +10,44 @@
 //----------------------------------------------
 // Fonts
 //----------------------------------------------
-// default for everything
-$font: "Roboto",
-sans-serif; //400/700
-$font-post: "Crimson Pro",
+// default for everything 
+$font: "SF Pro Display",
+-apple-system,
+BlinkMacSystemFont,
+"San Francisco",
+"Helvetica Neue",
+"Arial Nova",
+Helvetica,
+Ubuntu,
+Roboto,
+Noto,
+"Segoe UI",
+Arial,
+sans-serif; //400/700 and other weights included.
+$font-post: Georgia,
+"Crimson Pro",
 serif; //400/700
-$font-heading: "Permanent Marker",
+$font-heading: "Archivo Narrow",
 sans-serif;
 //300/400/700
 //----------------------------------------------
-$font-post-heading:'Roboto',
+$font-post-heading:'Archivo Narrow',
 sans-serif;
-$font-post-quote:'Schoolbell',
+$font-post-quote:'Garamond',
 serif;
 $font-post-highlight:'Lora',
 serif; //400/700
 //----------------------------------------------
-$font-quantum-heading:'IM Fell English SC',
-serif; //400/700
-$font-quantum-post:'Old Standard TT',
+$font-quantum-heading:$font,
 sans-serif; //400/700
-$font-quantum-quote:'Permanent Marker',
+$font-quantum-post: $font-post,
+serif; //400/700
+$font-quantum-quote:"Montserrat",
 sans-serif;
 $font-quantum-highlight:'Lora',
 sans-serif; //400/700
 //-----------------------------------------------
-$font-physics-heading:'Playfair Display',
+$font-physics-heading:'Archivo Narrow',
 sans-serif; //400/700
 $font-physics-post:'Roboto',
 sans-serif; //400/700

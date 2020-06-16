@@ -12,20 +12,18 @@
 //----------------------------------------------
 // Fonts
 //---------------------------------------------- 
-@import 'fonts/_roboto';
-@import 'fonts/_oldStandard';
-@import 'fonts/_lora';
-@import 'fonts/_IMFellEnglish';
+// SERIF
 @import 'fonts/_abrilFatface';
-@import 'fonts/_amaticSC';
+@import 'fonts/playfairDisplay';
+@import 'fonts/_lora';
 @import 'fonts/_crimson';
-@import 'fonts/_archivo';
+//handwriting
 @import 'fonts/_lacquer';
-@import 'fonts/_permanentMarker';
-@import 'fonts/_playfairDisplay';
-@import 'fonts/_playfairDisplaySC';
-@import 'fonts/_schoolbell';
-@import 'fonts/_oswald';
+// Sans SERIF
+@import 'fonts/_roboto';
+@import 'fonts/_archivo';
+@import 'fonts/archivoNarrow';
+//icons------------------------------
 @import 'fonts/_icons';
 //----------------------------------------------
 // Tools: Main Config & Global Variables

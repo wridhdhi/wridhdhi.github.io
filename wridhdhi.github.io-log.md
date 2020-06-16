@@ -80,20 +80,54 @@
 - [x] added padding inside post-cards and centered images by editing `post__img` class.
   
   ### TODO :
-- [ ] Don't run gulp until you've added all the custom CSS to sass format.
+- [x] Don't run gulp until you've added all the custom CSS to sass format. `see extra-shadow-badge.css` for the extra CSS until its absorbed into gulp.
 - [ ] correct spelling errors in posts and refurbish
-- [ ] add the quntum and physics scribble image
+- [ ] add the quntum and physics scribble images
 - [ ] start adding posts
 - [ ] try adding CSS and shadow to navigation pane
 - [ ] Images and the grid and flexbox method, but that's post midsem update. Until then no gulpfile.
 
 - [ ] GET A CLEAR IDEA OF TEXT AND START UPLOADING CONTENT. 
 - [ ] CREATE A HOME PAGE AND A SEPERATE PAGE FOR STORIES IN NAVIGATION.
-- 
+
+
+# Updates in Lockdown 2020
+- [ ] Fonts structure updated to decide ; see [fonts changes](#font-changes) to see final decision on fonts. Add the required fonts and [Arial Nova][3].
+- [ ] Study how salvattoreJS creates a [masonry using 3-colums][1]
+- [ ] CSS design on `after and before` on the CSS data columns
+- [ ] Fix the fonts on the all the pages, and the margins and sizing.
+- [ ] Add the font awesome icons and smileys for parsing since its already embedded in CSS
+- [ ] Remove and fix the background linear gradient.
+- [ ] Fix the monospace font size and highlighting to `Fira Code`
+- [ ] Highlight code using [this link][4]
+- [ ] fix the pre and code tags to light black and white, and fix its margins.
+- [ ] Fix and set the heading margins and font sizes.
+- [ ] Fix white space around paragraph elements and invite more white space.
+- [ ] set padding of `p-3` class to `1.5 1 1 1 rem`
+- [ ] add the style to navbar li's `li a::hover,span::hover{text-decoration-line: underline; text-underline-position: under;}` sor underline effect
+- [ ] work on building a main showcase, with a greet message.
+- [ ] Work on a projects section.
+- [ ] build a sidebar and archives
+- [ ] For posts : build the side by side images and text layout 
+- [ ] Learn how the widing images is done and the positioning
+- [ ] put the post image as heading background-image and dim it,center it.
+- [ ] work on css of the scrollbar
+- [ ] Write an about me section properly.
+- [ ] learn about tweet an fb embeds.
+- [ ] edit the post content, try to ad elongated post-images for better masonry, not landscape images always
+- [ ] header bg-color `#ffc107`
+- [ ] add lines after headings [like this page][2]
+- [ ] Decide which headings to use for posts and their sizes.
+- [ ] fix the background image of each post to cover and also overlay the back background behind the heading font.(use pseudo elements `after before`)
+- [ ] add virtual scrollbars (optional)
 
 
 
 
+[1]: https://salvattore.js.org/
+[2]: https://css-tricks.com/line-on-sides-headers/
+[3]: https://stackoverflow.com/questions/41747557/how-to-add-a-ttf-font-file-from-web-in-sass-to-be-displayed-in-haml
+[4]: https://medium.com/@mattlistor/highlight-effect-using-css-204ab4590480
 
 
 

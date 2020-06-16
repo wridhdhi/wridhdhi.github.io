@@ -6,6 +6,9 @@ description:
 categories: Personal
 image: /assets/images/9-very-Hyper/hyper-main.png
 author: Wridhdhisom Karar
+badge:  
+  - personal
+  - life
 tags:
   - 
   - personal
