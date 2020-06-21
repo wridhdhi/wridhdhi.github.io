@@ -6,7 +6,7 @@ layout: default
     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post__header section-padding--double">
             <div class="grid-small">
-                <h2 itemprop="name headline">{{ page.title }}</h2>
+                <h2 itemprop="name headline" class="post__header-style2">{{ page.title }}</h2>
 
                 <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
             </div>
@@ -20,7 +20,7 @@ layout: default
         </div>
         {% endif %}
 
-        <div class="post__content section-padding">
+        <div class="post__content style-2 section-padding">
             <div class="grid">
                 <div id="markdown" itemprop="articleBody">
                     {{content}}

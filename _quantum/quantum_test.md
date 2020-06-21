@@ -1,5 +1,5 @@
 ---
-layout: quantum_post
+layout: serif_post
 title:  "Deplying your github website with Travis"
 date:   2019-06-30 22:57:39 +0530
 description:

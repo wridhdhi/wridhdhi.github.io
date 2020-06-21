@@ -5,48 +5,47 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Courier, monospace;
-  font-size: $font-small;
+    font-family: $font-highlight;
+    font-size: 1em;
 }
 
 pre {
-  margin: {
-    top: 0;
-    bottom: 0;
-  }
-  padding: 2em 0.75em;
-
-  line-height: 1.8;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  color: $color-black;
-  background: $color-lightgrey;
-  border-radius: 5px;
-  overflow: hidden;
-
-  @media (min-width: $mq-med) {
-    padding: {
-      right: 2em;
-      left: 2em;
+    //contains a big chunk of code
+    margin: {
+        top: 0;
+        bottom: 0;
     }
-  }
-
-  #markdown & {
-    margin-bottom: 1.5rem;
-
+    padding: 2em 1.5em 2em 1.5em;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: $metro-bluegrey;
+    border-radius: 15px;
+    overflow: hidden;
     @media (min-width: $mq-med) {
-      min-width: 110%;
+        padding: {
+            right: 2em;
+            left: 2em;
+        }
     }
-  }
-
-  code {
-    padding: 0;
-  }
+    #markdown & {
+        margin-bottom: 1.5rem;
+        @media (min-width: $mq-med) {
+            min-width: 110%;
+        }
+    }
+    code {
+        padding: 0;
+        color: $metro-lime;
+        background: transparent;
+    }
 }
 
+//this if for any onliner code not blocks
 code {
-  padding: 0.25em 0.5em;
-
-  color: $color-black;
-  background: $color-lightgrey;
+    border-radius: 0.4em;
+    font-size: $font-small;
+    padding: 0.15em 0.3em;
+    color: $color-black;
+    background: #ff57221c;
 }

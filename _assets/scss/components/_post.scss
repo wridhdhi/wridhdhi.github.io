@@ -6,25 +6,24 @@
     // .amp-template & {
     //   background-color: $color-white;
     // }
+    background-image: url('../images/dots_bkg.png');
+    background-color: $color-white;
     &__header {
-        .collection_page-layout & {
-            font-family: $font-heading;
+        &-style1 {
+            font-family: $font-style1-heading;
         }
-        .quantum_post-layout & {
-            font-family: $font-quantum-heading;
+        &-style2 {
+            font-family: $font-style2-heading;
         }
-        .physics_post-layout & {
-            font-family: $font-physics-heading;
-        }
-        @extend %text-center;
+        @extend %text-center; //centers text
         border-bottom: $border;
-        font-weight: 300;
+        font-weight: 700;
     }
     &__date {
         @extend %font-header;
         display: block;
         margin-top: 0.25em;
-        font-size: $font-xsmall;
+        font-size: $font-small;
     }
     &__img {
         height: 18em;
@@ -112,20 +111,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .post-layout &,
+    .post-layout &, // gets appended to the body tag in `default.html` layout
     #style-guide & {
+        //note this is global themeing for page
         font-family: $font-post;
     }
-    .quantum_post-layout & {
-        font-family: $font-quantum-post;
+    .sansSerif_post-layout & {
+        font-family: $font-style1-post;
     }
-    .physics_post-layout & {
-        font-family: $font-physics-post;
+    .serif_post-layout & {
+        font-family: $font-style2-post;
+        letter-spacing: 0.02rem; //because of georgia
+    }
+    @media(max-width:$mq-xsmall) {
+        font-size: $font-small;
+        // line-height: ;
     }
     &>* {
         min-width: 100%;
         &:first-child {
-            margin-top: 0;
+            margin-top: 0px;
         }
         &:last-child {
             margin-bottom: 0;
@@ -137,37 +142,37 @@
     h4,
     h5,
     h6 {
-        margin-bottom: 0.5rem;
+        margin: 1.5rem 0 1.4rem 0;
         font-family: $font-post-heading;
-        .quantum_post-layout & {
-            font-family: $font-quantum-heading;
+        .style-1 & {
+            font-family: $font-style1-heading;
         }
-        .physics_post-layout & {
-            font-family: $font-physics-heading;
+        .style-2 & {
+            font-family: $font-style2-heading;
         }
     }
     h1 {
-        font-size: 2.25em;
+        font-size: 3.1em;
         line-height: 1.2;
     }
     h2 {
-        font-size: 2em;
+        font-size: 2.4em;
         line-height: 1.2;
     }
     h3 {
-        font-size: 1.75em;
+        font-size: 2em;
         line-height: 1.3;
     }
     h4 {
-        font-size: 1.5em;
+        font-size: 1.8em;
         line-height: 1.3;
     }
     h5 {
-        font-size: 1.25em;
+        font-size: 1.5em;
         line-height: 1.4;
     }
     h6 {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     h6+hr {
         #style-guide & {
@@ -177,29 +182,68 @@
     p {
         margin-bottom: 1.5rem;
         font-size: 1.1em;
-        @media (min-width: $mq-small) {
+        @media (min-width: $mq-xlarge) {
+            //see this in typography,its too huge,33px for small screens
             font-size: 1.25em;
+            line-height: 2.1em;
         }
         img {
-            margin-bottom: 0;
+            //when text just before image
+            margin-bottom: 0.7rem;
+            margin-top: 0.7rem;
+            &+em {
+                @extend %font-header; //weight 700
+                display: inline-block; //underneath the img
+                color: $color-darkgrey;
+                font-size: $font-xxsmall; //0.7em
+                font-style: normal;
+                font-family: Roboto;
+                // text-align: center;
+                line-height: $base-lineheight;
+                margin-top: 0;
+                margin-bottom: 0.5em; //because its already in a p
+                // // box-shadow: inset 0 -0.6em 0 $metro-yellow;
+                text-align: right;
+                line-height: 1.8em;
+                margin-top: 0;
+                position: relative; // for the highlight
+                &:after {
+                    // content: "";
+                    // width: 110%;
+                    // height: .7em;
+                    // position: absolute;
+                    // left: 0;
+                    // z-index: -1;
+                    // background-color: #FFEB3B;
+                    // bottom: .2em;
+                    //-----------------------
+                    @include verticalHighlight($font-xxsmall,
+                    2.4em,
+                    $metro-blue);
+                }
+            }
         }
     }
     blockquote {
         p {
+            margin-top: 0;
             margin-bottom: 0;
-            font-family: $font-post-quote;
-            .quantum_post-layout & {
-                font-family: $font-quantum-quote;
+            font-style: italic;
+            font-family: $font-post-block;
+            .style-1 & {
+                font-family: $font-style1-quote;
             }
-            .physics_post-layout & {
-                font-family: $font-physics-quote;
+            .style-2 & {
+                font-family: $font-style2-quote;
             }
         }
     }
     a {
         color: $color-black;
-        border-bottom: 2px solid $color-grey;
-        box-shadow: inset 0 -3px 0 $color-grey;
+        box-shadow: inset 0 -3px 0 $metro-blue;
+        &:hover {
+            box-shadow: inset 0 -0.6em 0 $metro-yellow;
+        }
     }
     hr {
         height: 1.5px;
@@ -209,7 +253,8 @@
             bottom: 1.5rem;
         }
         border: 0;
-        background-color: rgba($color-black, 0.1);
+        background-color: rgba($color-black,
+        0.1);
     }
     br {
         display: none;

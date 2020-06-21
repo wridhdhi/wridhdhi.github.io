@@ -17,12 +17,16 @@
 @import 'fonts/playfairDisplay';
 @import 'fonts/_lora';
 @import 'fonts/_crimson';
+@import 'fonts/firaCode';
 //handwriting
-@import 'fonts/_lacquer';
+@import 'fonts/lacquer';
 // Sans SERIF
 @import 'fonts/_roboto';
+@import 'fonts/robotoCondensed';
 @import 'fonts/_archivo';
 @import 'fonts/archivoNarrow';
+@import 'fonts/montserrat';
+@import 'fonts/karla';
 //icons------------------------------
 @import 'fonts/_icons';
 //----------------------------------------------
@@ -55,6 +59,9 @@
 @import 'base/_lists';
 @import 'base/_media';
 @import 'base/_typography';
+@import 'base/math';
+@import 'base/_badges';
+@import 'base/_shadows';
 //----------------------------------------------   
 // Vendor
 //----------------------------------------------  
@@ -76,6 +83,7 @@
 @import 'components/_related';
 @import 'components/_subscribe';
 @import 'components/_zoom';
+@import 'components/_showcase';
 //----------------------------------------------  
 // Utils
 //---------------------------------------------- 

@@ -1,62 +1,67 @@
 //----------------------------------------------
-// Header
+// Header Navigation
 //---------------------------------------------- 
 .header {
-  @extend %letter-spacing;
-  @extend %box-shadow;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: $z-999;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: $header-height;
-  width: 100%;
-  padding: {
-    right: 1em;
-    left: 1em;
-  }
-
-  background-color: $color-white;
-  border-bottom: $border;
-
-  @media (min-width: $mq-small) {
-    padding: {
-      right: 2em;
-      left: 2em;
-    }
-  }
-
-  &__title {
-    @extend %font-header;
-
-    font-size: $font-xsmall;
-    color: $color-black;
-  }
-
-  &__list {
-    @extend %no-list-style;
-
+    @extend %letter-spacing;
+    @extend %box-shadow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-999; //behind
     display: flex;
     align-items: center;
-
-    & > * {
-      @extend .header__title;
-
-      &:not(:last-child) {
-        margin-right: 1em;
-
-        @media (min-width: $mq-small) {
-          margin-right: 2em;
-        }
-      }
-
-      a {
-        color: $color-black;
-      }
+    justify-content: space-between;
+    height: $header-height;
+    width: 100%;
+    padding: {
+        right: 1em;
+        left: 1em;
     }
-  }
+    background-color: $metro-orange;
+    border-bottom: $border;
+    @media (min-width: $mq-small) {
+        padding: {
+            right: 2em;
+            left: 2em;
+        }
+    }
+    @media (max-width:$mq-small) {
+        min-height: $header-height;
+    }
+    &__title {
+        @extend %font-header;
+        font-size: $font-xsmall;
+        color: $color-black;
+    }
+    &__list {
+        //ul
+        @extend %no-list-style;
+        display: flex;
+        align-items: center;
+        &>* {
+            //li
+            height: 100%;
+            display: inline-block;
+            position: relative;
+            @extend .header__title;
+            &:not(:last-child) {
+                margin-right: 1em;
+                @media (min-width: $mq-small) {
+                    margin-right: 2em;
+                }
+            }
+            a {
+                color: $color-black;
+            }
+        }
+        &>*:hover::after {
+            content: "";
+            background-color: $metro-pink;
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            top: 125%; //TODO fix this
+            left: 0%;
+        }
+    }
 }

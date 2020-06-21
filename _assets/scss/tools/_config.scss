@@ -20,45 +20,72 @@ BlinkMacSystemFont,
 Helvetica,
 Ubuntu,
 Roboto,
-Noto,
 "Segoe UI",
 Arial,
 sans-serif; //400/700 and other weights included.
-$font-post: Georgia,
+$font-post:$font; // setting the helvetica family as default for all posts
+$font-post-heading:Roboto,
+Arial,
+sans-serif;
+// the 300 weight is sexy by default
+$font-post-block:$font;
+// -------------Additonal styles--------------
+// ----------------------------------------
+// use the serif_post layout in posts
+$font-style2-post: Georgia,
 "Crimson Pro",
 serif; //400/700
-$font-heading: "Archivo Narrow",
+$font-style2-heading: "Archivo Narrow",
 sans-serif;
-//300/400/700
-//----------------------------------------------
-$font-post-heading:'Archivo Narrow',
-sans-serif;
-$font-post-quote:'Garamond',
+$font-style2-quote: "Garamond",
+sans-serif; // 500 italic
+// --------------------------------
+// use the sansSerif_post layout
+$font-style1-heading:'Playfair Display',
 serif;
-$font-post-highlight:'Lora',
-serif; //400/700
-//----------------------------------------------
-$font-quantum-heading:$font,
-sans-serif; //400/700
-$font-quantum-post: $font-post,
-serif; //400/700
-$font-quantum-quote:"Montserrat",
+$font-style1-post:"Helvetica Neue",
+"Arial Nova",
+Helvetica,
+Ubuntu,
+Roboto,
+"Segoe UI",
+Arial,
 sans-serif;
-$font-quantum-highlight:'Lora',
-sans-serif; //400/700
-//-----------------------------------------------
-$font-physics-heading:'Archivo Narrow',
-sans-serif; //400/700
-$font-physics-post:'Roboto',
-sans-serif; //400/700
-$font-physics-quote:'Lacquer',
-sans-serif;
-$font-physics-highlight:'Lora',
-sans-serif; //400/700
+$font-style1-quote:'Montserrat',
+serif;
+//---------------------------------
+$font-highlight:'Fira Code',
+Consolas,
+monospace; //400/700
+// ----------------------------------------------
+// $font-post-heading:'Archivo Narrow',
+// sans-serif;
+// $font-post-quote:'Garamond',
+// serif;
+// $font-post-highlight:'Lora',
+// serif; //400/700
+// //----------------------------------------------
+// $font-quantum-heading:$font,
+// sans-serif; //400/700
+// $font-quantum-post: $font-post,
+// serif; //400/700
+// $font-quantum-quote:"Montserrat",
+// sans-serif;
+// $font-quantum-highlight:'Lora',
+// sans-serif; //400/700
+// //-----------------------------------------------
+// $font-physics-heading:'Archivo Narrow',
+// sans-serif; //400/700
+// $font-physics-post:'Roboto',
+// sans-serif; //400/700
+// $font-physics-quote:'Lacquer',
+// sans-serif;
+// $font-physics-highlight:'Lora',
+// sans-serif; //400/700
 //----------------------------------------------
 // Fonts: Lineheight
 //---------------------------------------------- 
-$base-lineheight: 1.7;
+$base-lineheight: 1.8em;
 //----------------------------------------------
 // Fonts: Size variables
 //---------------------------------------------- 
@@ -71,13 +98,13 @@ $font-xxxsmall: 0.6em;
 //---------------------------------------------- 
 // Smallest phone
 $mq-xsmall: 22em;
-// Phone
+// Phone 352
 $mq-small: 32em;
-// Tablet
+// Tablet 512
 $mq-med: 54em;
-// Laptop
+// Laptop 864
 $mq-large: 65em;
-// Past laptop
+// Past laptop 1040
 $mq-xlarge: 91em;
 // Mid-size monitor
 $mq-xxlarge: 115em;
@@ -86,12 +113,22 @@ $mq-xxxlarge: 130em;
 //----------------------------------------------
 // Colors
 //---------------------------------------------- 
-$color-alpha: #f00;
+$color-alpha: #FF5252;
 $color-white: #fff;
-$color-lightgrey: #f8f8f8;
-$color-grey: #bbb;
-$color-darkgrey: #aaa;
-$color-black: #000;
+$color-lightgrey: #EEEEEE;
+$color-grey: #757575;
+$color-darkgrey: #424242;
+$color-black: #212121;
+$metro-red:#FF1744;
+$metro-blue:#2196F3;
+$metro-orange:#FFC107;
+$metro-yellow:#ffeb3b;
+$metro-purple:#6200EA;
+$metro-green:#00E676;
+$metro-pink:#F50057;
+$metro-lime:#C6FF00;
+$metro-bluegrey:#37474F;
+$paper-color:rgba(238, 242, 247, 0.424);
 //----------------------------------------------
 // Z-indexes
 //----------------------------------------------
@@ -112,7 +149,7 @@ $max-width--xl: 81em;
 //----------------------------------------------
 // Misc
 //----------------------------------------------
-$header-height: 3em;
+$header-height: 3.2em;
 $border: 1px solid rgba($color-black, 0.1);
 $ease-cb-1: cubic-bezier(0.4, 0, 0.2, 1);
 $ease-cb-2: cubic-bezier(0.19, 1, 0.22, 1);

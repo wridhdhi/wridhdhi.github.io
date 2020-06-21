@@ -42,13 +42,15 @@ author:
 
 
 collections:
-  physics:
-    output: true
-    permalink: /physics/:path
   quantum:
     output: true
     permalink: /quantum/:path
-
+  physics:
+    output: true
+    permalink: /physics/:path
+  work:
+    output: true
+    permalink: /work/:path
 
 # Pagination settings
 pagination:

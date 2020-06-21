@@ -1,0 +1,48 @@
+.showcase {
+    width: 100%;
+    min-height: 50vh;
+    margin-top: $header-height;
+    display: flex;
+    align-items: center;
+    &>* {
+        margin-left: 2rem;
+        margin-right: 0;
+        margin-top: 2.5em;
+    }
+    &__image {
+        // background-image: url('../images/showcase.png');
+        order: 2;
+        object-fit: cover;
+    }
+    &__info {
+        // flex-basis: 40%;
+    }
+    h2 {
+        margin-bottom: 0.7rem;
+    }
+    p {
+        font-size: $font-xsmall;
+    }
+    @media(max-width:$mq-med) {
+        display: block;
+        &>* {
+            margin: 0.7rem auto;
+        }
+        &__info {
+            margin: 1em 2em;
+        }
+    }
+}
+
+.button {
+    font-size: $font-small;
+    background-color: $metro-blue;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    color: $color-white;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    &:hover {
+        opacity: 0.9;
+    }
+}

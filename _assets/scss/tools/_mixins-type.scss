@@ -7,38 +7,48 @@
 //  @param:       $pad: [0] - Padding
 //----------------------------------------------
 @mixin btn-split($color, $borderColor: $color, $borderWidth: 1px, $pad: 0) {
-  position: relative;
-
-  padding: $pad;
-
-  color: $color;
-
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    height: 100%;
-    width: 100%;
-
-    border: $borderWidth solid $borderColor;
-    transition: transform 200ms ease-in;
-  }
-
-  &:hover {
+    position: relative;
+    padding: $pad;
+    color: $color;
     &:before,
     &:after {
-      transition: transform 200ms ease-out;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: $borderWidth solid $borderColor;
+        transition: transform 200ms ease-in;
     }
+    &:hover {
+        &:before,
+        &:after {
+            transition: transform 200ms ease-out;
+        }
+        &:before {
+            transform: translate3d(-$borderWidth - 1px, $borderWidth + 1px, 0);
+        }
+        &:after {
+            transform: translate3d($borderWidth + 1px, -$borderWidth - 1px, 0);
+        }
+    }
+}
 
-    &:before {
-      transform: translate3d(-$borderWidth - 1px, $borderWidth + 1px, 0);
-    }
-
-    &:after {
-      transform: translate3d($borderWidth + 1px, -$borderWidth - 1px, 0);
-    }
-  }
+//parent must be relative
+//for vertical height
+//set 2.4em for under image
+// set .2em for justhighlight
+// put in after
+@mixin verticalHighlight($fontSize, $verticalHeight, $highlightColor) {
+    content: "";
+    width: 105%;
+    height: $fontSize+0.1em;
+    position: absolute; //parent must be relative
+    left: 0;
+    z-index: -1;
+    background-color: $highlightColor;
+    bottom: $verticalHeight; //set 2.4em
+    //set $upperMargin(0.7)+$line-height+-0.1
+    //make height:$font-size+0.2(here should be 0.9)
 }
