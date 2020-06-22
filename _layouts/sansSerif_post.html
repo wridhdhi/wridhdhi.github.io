@@ -1,25 +1,28 @@
----
+--- 
 layout: default
 ---
 
 <div class="post">
     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        <div class="post__header section-padding--double">
-            <div class="grid-small">
-                <h2 itemprop="name headline" class="post__header-style1">{{ page.title }}</h2>
 
-                <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}"
-                    itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
-            </div>
-        </div>
 
-        {% if page.image %}
+      
         <div class="post__img">
+
+            {% if page.image %}
             <div>
                 <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
             </div>
+            {% endif %}
+            <div class="post__header ">
+                <div class="grid-small">
+                    <h2 itemprop="name headline" class="post__header-style1">{{ page.title }}</h2>
+
+                    <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
+                </div>
+            </div>
         </div>
-        {% endif %}
+       
 
         <div class="post__content style-1 section-padding">
             <div class="grid">
@@ -44,8 +47,7 @@ layout: default
                 {% for author in site.author %}
                 <span class="post__author">Posted by {% if author["name"] == page.author and author["url"] %}<a
                         href="{{ author['url'] }}"
-                        title="More By {{ page.author }}">{% endif %}{{ page.author }}{% if author["name"] == page.author and author["url"] %}</a>{% endif %}</span>
-                {% if author["name"] == page.author %}
+                        title="More By {{ page.author }}">{% endif %}{{ page.author }}{% if author["name"] == page.author and author["url"] %}</a>{% endif %}</span> {% if author["name"] == page.author %}
                 <p class="post__bio">{{ author["bio"] }}</p>
                 {% endif %} {% endfor %}
             </div>

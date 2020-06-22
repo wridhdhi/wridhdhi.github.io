@@ -4,21 +4,24 @@ layout: default
 
 <div class="post">
     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        <div class="post__header section-padding--double">
-            <div class="grid-small">
-                <h2 itemprop="name headline" class="post__header-style2">{{ page.title }}</h2>
 
-                <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
+
+
+        <!-- <div class=" section-padding--double"> -->
+        <div class="post__header grid-small">
+            {% if page.image %}
+            <div class="post__img">
+                <div>
+                    <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
+                </div>
             </div>
+            {% endif %}
+            <h2 itemprop="name headline" class="post__header-style2">{{ page.title }}</h2>
+
+            <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
+            <!-- </div> -->
         </div>
 
-        {% if page.image %}
-        <div class="post__img">
-            <div>
-                <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
-            </div>
-        </div>
-        {% endif %}
 
         <div class="post__content style-2 section-padding">
             <div class="grid">

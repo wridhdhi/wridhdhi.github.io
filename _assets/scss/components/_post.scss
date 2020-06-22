@@ -9,6 +9,8 @@
     background-image: url('../images/dots_bkg.png');
     background-color: $color-white;
     &__header {
+        position: absolute;
+        top: 50%;
         &-style1 {
             font-family: $font-style1-heading;
         }
@@ -28,6 +30,7 @@
     &__img {
         height: 18em;
         padding: 1em;
+        position: relative;
         @media (min-width: $mq-small) {
             height: 36em;
             padding: 2em;
@@ -296,7 +299,7 @@
                 //-----------------------
                 // use height:0.3em
                 @include verticalHighlight(5px,
-                2.4em,
+                2.7em,
                 $metro-orange);
             }
         }

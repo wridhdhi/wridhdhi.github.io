@@ -143,6 +143,7 @@
 - [ ] fix the responsive navbar
 - [ ] remove and fix the work thingy
 - [ ] **IMPORTANT**: Captions have to fixed
+- [ ] add a background of nets and checks to showcase
 
 
 
