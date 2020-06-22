@@ -43,10 +43,10 @@
 @mixin verticalHighlight($fontSize, $verticalHeight, $highlightColor) {
     content: "";
     width: 105%;
-    height: $fontSize+0.1em;
+    height: $fontSize;
     position: absolute; //parent must be relative
     left: 0;
-    z-index: -1;
+    // z-index: -1;
     background-color: $highlightColor;
     bottom: $verticalHeight; //set 2.4em
     //set $upperMargin(0.7)+$line-height+-0.1

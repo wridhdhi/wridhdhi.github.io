@@ -2,7 +2,7 @@
 .DS_Store
 .s3-website.json
 node_modules/
-_site
+_site/
 .sass-cache
 .jekyll-metadata
 package-lock.json

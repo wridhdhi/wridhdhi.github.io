@@ -136,12 +136,13 @@
 - [ ] see kramdown and add footnotes
 - [ ] captions(beneath the text,immediately next line `*write the caption*) and citations added(for citation use `<cite>` or ass class `{: .cite}`)
 - [x] ~~added caption under images~~
-- [ ] add tooltip to headings.
-- [ ] stylize hr
+- [x] ~~add tooltip to headings.~~
+- [x] ~~stylize hr~~
 - [ ] Style the markdown area, create padding, and have a background patten like a section.
 - [ ] Fix the sizing of layouts.to see 3 cols
 - [ ] fix the responsive navbar
 - [ ] remove and fix the work thingy
+- [ ] **IMPORTANT**: Captions have to fixed
 
 
 
@@ -239,3 +240,7 @@ img {
                 }
             }
 ```
+
+# Remmember Travis build
+never touch `Gemfile.lock`
+also soon you might have to update the system.
