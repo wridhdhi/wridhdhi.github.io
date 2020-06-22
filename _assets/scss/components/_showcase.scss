@@ -12,7 +12,6 @@
     &__image {
         // background-image: url('../images/showcase.png');
         order: 2;
-        object-fit: cover;
     }
     &__info {
         // flex-basis: 40%;
@@ -22,14 +21,16 @@
     }
     p {
         font-size: $font-xsmall;
+        letter-spacing: 0.02em;
     }
     @media(max-width:$mq-med) {
         display: block;
         &>* {
-            margin: 0.7rem auto;
+            // margin: 0.7rem auto;
+            // removing this style because it looks good
         }
         &__info {
-            margin: 1em 2em;
+            margin: 1.5em 2em;
         }
     }
 }
