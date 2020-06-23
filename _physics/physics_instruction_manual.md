@@ -4,7 +4,7 @@ title:  "Professional font testing Post with lots of</br> unnecessary words so t
 date:   2020-04-22 22:57:39 +0530
 description:
 categories: Logs
-image: /assets/images/placeholder-17.jpg
+image: /assets/images/12-demo_post/pendulum.gif
 author: Wridhdhisom Karar
 badge: 
   - simulation

@@ -9,46 +9,9 @@
       <!-- TODO : if there is no post image, put the title in Bold sans-serif font  -->
     {% endif %}
     <div  style="padding: 2%"><p>
-      <h2 class="posts__text " ><strong itemprop="name">{{ post.title }}</strong> </h2><h3 style="display: inline-block; ">
-      {% for badge in post.badge  %}
-        {% case badge %}
-        {% when 'code' %}
-      <span class="badge badge-primary">code
-        {% when 'personal' %}
-      <span class="badge badge-danger">personal
-      
-        {% when 'life' %}
-      <span class="badge badge-success">life
-      
-        {% when 'physics' %}
-      <span class="badge badge-primary">physics
-      
-        {% when 'theory' %}
-        <span class="badge badge-info">theory
-
-        {% when 'simulation' %}
-      <span class="badge badge-warning">simulation
-      
-        {% when 'quantum' %}
-      <span class="badge badge-danger">quantum
-    
-        {% when 'algorithm' %}
-      <span class="badge badge-light">algorithm
-   
-        {% when 'computing' %}
-      <span class="badge badge-dark">computing/span>
-      
-        {% when 'experiment' %}
-      <span class="badge badge-success">experiment
-      
-        {% else %}
-         
-      {% endcase %}</span>
- 
-      {% endfor %}
-    </h3>
+      <h2 class="posts__text " ><strong itemprop="name">{{ post.title }}</strong> </h2>
       <!-- <span class="badge badge-secondary">Secondary -->
-      
+      {% include badges.html %}
         <span itemprop="description">  {{ post.content | strip_html | truncatewords: 30, "" }} ...  </p>
     </div>
   </a>

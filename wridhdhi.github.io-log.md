@@ -114,7 +114,7 @@
 
 # Updates in Lockdown 2020
 - [x] ~~Fonts structure updated to decide ; see [fonts changes](#font-changes) to see final decision on fonts.~~ ~~Add the required fonts and [Arial Nova]~~[3] (Arial nova proprietary font, not gonna push to github.) Fonts incorporated and added to app.scss
-- [x] ~~Study how salvattoreJS creates a [masonry using 3-colums][1]~~ CAN DO IT LATER AFTER JS/JQUERY
+- [ ] ~~Study how salvattoreJS creates a [masonry using 3-colums][1]~~ C~~AN DO IT LATER AFTER JS/JQUERY~~ **DONE** check `posts.scss` and the salvattore website on how to make it work,
 - [ ] ~~CSS design on `after and before` on the CSS data columns~~  ; *post__container* shows table content after, might be something with JS (ignore for now)
 - [x] ~~fixed responsive line heights on sizes~~ (see typography,config,post,type_extends) for details
 - [x] ~~added~~ metro-colors

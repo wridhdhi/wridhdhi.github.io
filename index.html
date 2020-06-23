@@ -1,9 +1,16 @@
 --- 
 layout: default 
 pagination: 
-  enabled: true 
----
-{% include showcase.html  %}
+    enabled: true 
+    collection: posts,quantum,physics
+--- 
+
+
+
+{% include showcase.html %}
+
+
+
 <!-- The main content area -->
 <div class="posts">
     <div class="grid-xlarge">
@@ -12,10 +19,9 @@ pagination:
             {% for post in paginator.posts %}
 
             <!-- The tag below includes the markup for each post - partials/post-card.html -->
-            {% include post-card.html %} {% endfor %}
+            {% include post-card.html %}
+             {% endfor %}
         </div>
     </div>
-
-
     {% include pagination.html %}
 </div>

@@ -55,7 +55,7 @@ collections:
 # Pagination settings
 pagination:
   enabled: true
-  debug: false
+  debug: true
   per_page: 12
   permalink: '/page/:num/'
   title: ':title'
@@ -65,16 +65,15 @@ pagination:
 
 
 autopages:
-  enabled: true
+  enabled: false
   categories:
     enabled: false
   collections: 
     enabled: false
-    # permalink: '/:coll'
-    # slugify:
-    #   mode: raw
-    #   cased: true
-  
+    permalink: '/:coll'
+    slugify:
+      mode: raw
+      cased: true
   tags:
     layouts: 
       - 'tag.html'
