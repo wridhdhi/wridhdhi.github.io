@@ -1,3 +1,24 @@
+- [wridhdhi.github.io log/changes](#wridhdhigithubio-logchanges)
+  - [v.0.1](#v01)
+  - [v0.1.1](#v011)
+  - [v0.1.2](#v012)
+- [Introducting tags : [fixed later]](#introducting-tags--fixed-later)
+- [Categories : [fixed later]](#categories--fixed-later)
+- [NOTES:](#notes)
+  - [Major changes missing](#major-changes-missing)
+  - [Font changes [Later done]](#font-changes-later-done)
+- [v1.1.0](#v110)
+    - [Following changed](#following-changed)
+    - [TODO :](#todo-)
+- [Updates in Lockdown 2020](#updates-in-lockdown-2020)
+- [Keep in mind for developing](#keep-in-mind-for-developing)
+- [Keep in mind while writing posts:](#keep-in-mind-while-writing-posts)
+- [Places to change collections](#places-to-change-collections)
+- [putting mathJaX and styling in head](#putting-mathjax-and-styling-in-head)
+- [Jekyll text highlight](#jekyll-text-highlight)
+- [Remmember Travis build](#remmember-travis-build)
+  - [Travis permission issue](#travis-permission-issue)
+- [Animation changes.](#animation-changes)
 
 # wridhdhi.github.io log/changes
 
@@ -7,12 +28,12 @@
 - [x] ~~explore the barber-theme~~
 - [x] ~~modified barber theme to change the present CODE theme~~ and deployed.
 - [x] ~~understood site structure and changed config.yml of **barber theme**~~
-- [x] understand **app.min.js** and and **app.min.css**  and modify usng bootstrap.
-- [x] **add pages for collections and categories** AND MANAGE NAVIGATION.
-- [x] make a list for tags
-- [x] modify home page
-- [x] change **config.yml** for **disqus/mailchimp/and formcarry**
-- [x] **Look into kramdown and weird parsing of lists**
+- [x] ~~understand **app.min.js** and and **app.min.css**  and modify usng bootstrap.~~
+- [x] ~~**add pages for collections and categories** AND MANAGE NAVIGATION.~~
+- [x] ~~make a list for tags~~
+- [x] ~~modify home page~~
+- [x] ~~change **config.yml** for **disqus/mailchimp/and formcarry**~~
+- [x] ~~**Look into kramdown and weird parsing of lists**~~
 
 ## v.0.1
 
@@ -37,7 +58,7 @@
 
 ## v0.1.2
 
-#### tags :
+# Introducting tags : [fixed later]
 - GSOC
 - quantum for all quantum posts
 - code for posts that have code
@@ -45,7 +66,7 @@
 - project/work for any work
 - illustration/graphic for creations
 
-#### categories :
+# Categories : [fixed later]
  - GSOC
  - Projects @ IISER
  - Personal Projects
@@ -61,7 +82,7 @@
 
 ---
 
-## Font changes
+## Font changes [Later done]
 
 ---
 
@@ -69,15 +90,15 @@
 
 # v1.1.0
 ### Following changed 
-- [x] Added navigation for physics and quantum posts
-- [x] changed header title-repeat issue in ```<title>{% if page.title %}{{ page.title | escape }} <removed> {% else %}{{ site.title | escape }}{% endif %}</title>```
-- [x] changed **icon ** of the main site``` <link rel="icon" type="image/x-icon" href="{{ '/assets/images/atom.ico' | prepend: site.baseurl }}">```
-- [x] changed gradient of background in `typography.scss` also in the body
-- [x] added lots of custom CSS, please change them in sass too. 
-- [x] added css for badges classes=` badge badge-primary` and so on.
-- [x] added shadow class from bootstrap for shadow classes=`posts__link shadow-lg p-3 mb-5 bg-white rounded` see the edits done in **`post card.html` in includes**.
-- [x] added border css and also support for rounded borders, however they are added to the link **a href** tag to give the effect.
-- [x] added padding inside post-cards and centered images by editing `post__img` class.
+- [x] ~~Added navigation for physics and quantum posts~~
+- [x] ~~changed **icon ** of the main site``` <link rel="icon" type="image/x-icon" href="{{ '/assets/images/atom.ico' | prepend: site.baseurl }}">```~~
+- [x] ~~changed header title-repeat issue in ```<title>{% if page.title %}{{ page.title | escape }} <removed> {% else %}{{ site.title | escape }}{% endif %}</title>```~~
+- [x] ~~changed gradient of background in `typography.scss` also in the body~~
+- [x] ~~added lots of custom CSS, please change them in sass too. ~~
+- [x] ~~added css for badges classes=` badge badge-primary` and so on.~~
+- [x] ~~added shadow class from bootstrap for shadow classes=`posts__link shadow-lg p-3 mb-5 bg-white rounded` see the edits done in **`post card.html` in includes**.~~
+- [x] ~~added border css and also support for rounded borders, however they are added to the link **a href** tag to give the effect.~~
+- [x] ~~added padding inside post-cards and centered images by editing `post__img` class.~~
   
   ### TODO :
 - [x] Don't run gulp until you've added all the custom CSS to sass format. `see extra-shadow-badge.css` for the extra CSS until its absorbed into gulp.
@@ -99,7 +120,7 @@
 - [x] ~~added~~ metro-colors
 - [x] ~~fixed the overflow-x giving rise to~~ horizontal scrollbars bug
 - [x] ~~font sizes fixes for `mq-xlarge`~~ instead of `mq-small` being 1.25em , see in lists.scss/post.scss 
-- [ ] Fix the fonts on the all the pages, and the margins and sizing.
+- [x] ~~Fix the fonts on the all the pages, and the margins and sizing.~~
 - [ ] Add the font awesome icons and smileys for parsing since its already embedded in CSS
 - [x] ~~added emojis see the list ~~
 - [x] ~~Remove and fix the background linear gradient.~~,TODO **found  good color, until then patterns and rest remaining**
@@ -133,9 +154,9 @@
 - [x]  ~~fixed list font sizes~~ (lists.scss)
 - [ ] `grid` class with media query in post controls width, try to get a sidebar sidebar.
 - [ ] add author and style on the heading
-- [ ] fix responsivity
-- [ ] see kramdown and add footnotes
-- [ ] captions(beneath the text,immediately next line `*write the caption*) and citations added(for citation use `<cite>` or ass class `{: .cite}`)
+- [x] ~~fix responsivity~~
+- [x] ~~see kramdown and add footnotes~~
+- [x] ~~captions(beneath the text,immediately next line `*write the caption*) and citations added(for citation use `<cite>` or ass class `{: .cite}`)~~ **NEEDS FIXING**
 - [x] ~~added caption under images~~
 - [x] ~~add tooltip to headings.~~
 - [x] ~~stylize hr~~
@@ -171,7 +192,7 @@
 6. rarely use h1 except at top, mostly use h2. subheadings h3, topic headings h4 , minor emphasis h5.
 7. There is a seamless feature, of image just below a paragraph  with no gaps, makes it beautiful try that sometimes.
 8. have a line break(return)after a blockquote
-9. inlineMath: [ ['$', '$'], ~~["\(", "\)"]~~ ,displayMath: [ ['$$', '$$'], ["\[", "\]"] ]
+9. inlineMath: [ ['$', '$'], ~~["\(", "\)"]~~ ,displayMath: [ ['$$', '$$'], ~~["\[", "\]"] ~~]
 10. Checkboxes don't work, they will be disabled beforehand,use just to show
 11. there are 3 layouts. default:`post` , mostly the helvetica layout :`sansSerif_post` , mostly the georgia layout :`serif_post` use in the collections post for the required layout.Even you can use for personal posts.
 12. captions are under images now, **press enter>just next line do a emph** text `* this is caption*` ->caption.
@@ -183,7 +204,7 @@
 - layouts
 - index.html of that category
 - navigation
-- style1/style2/style3
+- style1/style2/style3 of the index page of the collections (note it must have same name as collections)
 
 
 # putting mathJaX and styling in head
@@ -251,11 +272,24 @@ img {
 never touch `Gemfile.lock`
 - use `bundle install` always
 also soon you might have to update the system.
+## Travis permission issue
+Travis is trying to run a file ./config/travis/build.sh, but it doesn't have permissions to execute that file.You'll need to give it permissions depending on where run-checks.sh lives. If this is something from your repo, you can give it permission to execute with:
+```bash
+git update-index --add --chmod=+x ./config/travis/run-checks.sh
+git commit -m "Added permissions for run-checks.sh"
+git push
+```
+If it's a script that's only available and found in travis' own environment, then you'll need travis to execute giving the permission.
+```yml
+before_script:
+  - chmod +x build.sh
+```
 
 # Animation changes.
 - never use too slow, 300ms is decent.
 - the image expands more than the container shrinks this is important fr the effect to be proper.
 - notices the height and weidth scale slowley /fastly if there is too much difference.
+- the margin on bottom was ruining everything.
 ```scss
  .post__link {
         display: block;
@@ -263,7 +297,7 @@ also soon you might have to update the system.
         &:hover {
             // transform: scale(1.01);
             .posts__img {
-                transform: scale(1.17);
+                transform: scale(1.3);
                 .post__img__container {
                     transform: scale(0.95);
                 }

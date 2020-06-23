@@ -2,6 +2,9 @@
     width: 100%;
     min-height: 50vh;
     margin-top: $header-height;
+    margin-bottom: 0.7rem;
+    padding-bottom: 1rem;
+    // border-bottom: $border;
     display: flex;
     align-items: center;
     &>* {

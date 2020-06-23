@@ -55,13 +55,19 @@
     &__link {
         display: block;
         color: $color-black;
+        transition: box-shadow .5s ease;
         &:hover {
-            // transform: scale(1.01);
+            // transform: scale(1.06);
+            // box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            // box-shadow: 0 .2rem .6rem rgba(0, 0, 0, .15);
             .posts__img {
-                transform: scale(1.17);
+                transform: scale(1.3);
                 &__container {
                     transform: scale(0.95);
                 }
+            }
+            .posts__text {
+                color: $metro-pink;
             }
         }
     }
@@ -81,6 +87,7 @@
     &__text {
         @extend %font-size;
         // font-family: $font-heading;
+        transition: color .3s ease-in-out;
         font-weight: 400;
     }
     &__pagination {

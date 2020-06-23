@@ -1,5 +1,7 @@
 //----------------------------------------------
 // Post
+//  1. all the post structure
+//  3. social links to share
 //---------------------------------------------- 
 //
 .post {
@@ -102,6 +104,10 @@
         a {
             font-size: 1.1em;
             color: $color-darkgrey;
+            &:hover {
+                color: $metro-pink;
+                // font-size: 1.13em;
+            }
         }
     }
     &__author {
