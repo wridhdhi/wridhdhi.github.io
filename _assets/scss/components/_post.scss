@@ -77,7 +77,7 @@
     //   padding: 1em;
     // }
     &__content {
-        border-top: $border;
+        // border-top: $border;
     }
     &__social {
         @extend %flex-center;
@@ -267,7 +267,7 @@
             }
         }
     }
-    blockquote {
+    blockquote:not(.twitter-tweet) {
         p {
             margin-top: 0;
             margin-bottom: 0;

@@ -66,9 +66,8 @@
         }
     }
     &__img {
-        margin-bottom: 1em;
         // background-color: $color-lightgrey;
-        transition: transform .3s ease;
+        transition: transform .3s ease-in-out;
         img {
             display: block;
             margin-left: auto;
@@ -76,7 +75,7 @@
         }
         &__container {
             overflow: hidden;
-            transition: transform .3s ease;
+            transition: transform .3s ease-in-out;
         }
     }
     &__text {

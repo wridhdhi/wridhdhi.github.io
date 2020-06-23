@@ -271,9 +271,9 @@ also soon you might have to update the system.
         }
     }
 .post__img {
-        margin-bottom: 1em;
+        margin-bottom: 1em; // THIS IS RUINING EVERYTHING !!!!!!!!!!!!!!!!!!!!!
         // background-color: $color-lightgrey;
-        transition: transform .3s ease;
+        transition: transform .3s ease-in-out;
         img {
             display: block;
             margin-left: auto;
@@ -281,6 +281,6 @@ also soon you might have to update the system.
         }
         .post__img__container {
             overflow: hidden;
-            transition: transform .3s ease;
+            transition: transform .3s ease-in-out;
         }
 ```
