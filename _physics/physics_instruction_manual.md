@@ -62,6 +62,8 @@ and save it in the `ENV _VARIABLES` of the dashboard of that repository.
 4.  and you want to automate this process using travis...
 
 ### Also this one is a h3
+{: .thicc}
+
 in the `_config.yml` of your jekyll site add the following line.
 
 ```yml

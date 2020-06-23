@@ -12,6 +12,7 @@
         background-color: $color-white;
         position: absolute;
         top: 50%;
+        font-weight: 700;
         padding: 1.5em 2em 1.5em 1.5em;
         margin-left: 1em;
         &-style1 {
@@ -24,15 +25,14 @@
         }
         @extend %text-center; //centers text
         border-right: 5px solid $metro-orange;
-        font-weight: 700;
         @media (max-width: $mq-small) {
             position: static;
             border-right: hidden;
-            border-bottom: $border;
+            margin: 0.5em auto;
         }
         &[image="no"] {
             position: static;
-            margin: 0em 0 0 0;
+            margin: 0;
             border-right: hidden;
             padding: 4em 0 3em 0;
             font-size: 2.5em;
@@ -44,7 +44,7 @@
     &__date {
         @extend %font-header;
         display: block;
-        margin-top: 0.25em;
+        margin-top: 0.5em;
         font-size: $font-small;
     }
     &__img {
