@@ -32,17 +32,26 @@ $font-post-block:$font;
 // -------------Additonal styles--------------
 // ----------------------------------------
 // use the serif_post layout in posts
+$font-style2-header:"Roboto",
+sans-serif;
+$font-style2-h_weight:400;
+$font-style2-heading:"Roboto Condensed",
+sans-serif;
+$font-style2-hd_weight:700;
 $font-style2-post: Georgia,
 "Crimson Pro",
 serif; //400/700
-$font-style2-heading: "Archivo Narrow",
-sans-serif;
 $font-style2-quote: "Garamond",
 sans-serif; // 500 italic
 // --------------------------------
 // use the sansSerif_post layout
-$font-style1-heading:'Playfair Display',
-serif;
+$font-style1-header:"Montserrat",
+sans-serif;
+$font-style1-h_weight:400;
+$font-style1-heading:"Helvetica Neue",
+'Roboto',
+sans-serif;
+$font-style1-hd_weight:300;
 $font-style1-post:"Helvetica Neue",
 "Arial Nova",
 Helvetica,
@@ -53,6 +62,7 @@ Arial,
 sans-serif;
 $font-style1-quote:'Montserrat',
 serif;
+//always 400 and italics.
 //---------------------------------
 $font-highlight:'Fira Code',
 Consolas,

@@ -44,7 +44,7 @@
         }
     }
     &__post {
-        padding: 2em 1em;
+        padding: 0em 1em;
         // @media (min-width: $mq-small) {
         //   padding: {
         //     top: 4em;
@@ -56,19 +56,27 @@
         display: block;
         color: $color-black;
         &:hover {
+            // transform: scale(1.01);
             .posts__img {
-                transform: translate3d(0, -10px, 0);
+                transform: scale(1.17);
+                &__container {
+                    transform: scale(0.95);
+                }
             }
         }
     }
     &__img {
         margin-bottom: 1em;
-        background-color: $color-lightgrey;
-        transition: transform 400ms ease-in-out;
+        // background-color: $color-lightgrey;
+        transition: transform .3s ease;
         img {
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        &__container {
+            overflow: hidden;
+            transition: transform .3s ease;
         }
     }
     &__text {
@@ -83,6 +91,7 @@
         }
     }
     &__next {
+        //loading more posts
         @extend %font-header;
         position: relative;
         z-index: 1;

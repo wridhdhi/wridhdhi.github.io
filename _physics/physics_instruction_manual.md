@@ -1,6 +1,6 @@
 ---
 layout: sansSerif_post
-title:  "Professional font testing Post"
+title:  "Professional font testing Post with lots of</br> unnecessary words so that we get </br> multiple lines "
 date:   2020-04-22 22:57:39 +0530
 description:
 categories: Logs
@@ -22,8 +22,10 @@ Now there are many many tutorials out there, honestly non of them worked for me.
 ## Smaller heading h2 :
 - You habe a github pages built using **jekyll** (or anything else)
 - Your source code is on `sources` branch and you want built `_site` folder to be deployed on the master branch ; so that if anyone visits `{yourname}.github.io` , they see your site.
-- I assume you use ` bundle exec jekyll build` in your root project directory to build your site and you copy/push "just" the `_site` folder to the repository to make the site live
+- I assume you use `bundle exec jekyll build` in your root project directory to [build your site and you][^1] copy/push "just" the `_site` folder to the repository to make the site live
 -  and you want to automate this process using travis...
+
+[^1]: http://www.google.com
 
 ## What you want :
 Everytime you push to github/`sources` branch, **Travis** will build the site and deploy only the `_site` folder to `master` or any other `branch`.
@@ -31,11 +33,16 @@ Everytime you push to github/`sources` branch, **Travis** will build the site an
 ![Placeholder](/assets/images/7-Travis_GHPages/workflow_github.jpg)
 
 
-##### _h4 :<https://savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html >_
+##### savaslabs.com/2016/10/25/deploy-jekyll-with-travis.html 
 
 ---
 
-#### h4 heading :
+##### h4:heading ink your github account and turn on the repository containing your project files/where you want to deploy.
+
+###### a h6 eading ink your github account and turn on the repository containing your project files/where you want to deploy.
+
+##### a h eading ink your github account and turn on the repository containing your project files/where you want to deploy.
+:
 There should be `.travis.yml` file in the sources/project directory so that it automatically triggers a build when you push it ;
 and deploys to the ` master` branch upon a successful build.
 
@@ -45,7 +52,7 @@ See the `.travis.yml` below.
 
 ---
 
-### a tiny h3 heading see this
+### a tiny h3 heading see this eading ink your github account and turn on the repository containing your project files/where you want to deploy.
 
 get the GITHUB TOKEN from your github account `> settings > development > tokens`
 and save it in the `ENV _VARIABLES` of the dashboard of that repository.

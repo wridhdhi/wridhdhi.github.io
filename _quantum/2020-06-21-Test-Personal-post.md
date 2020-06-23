@@ -16,7 +16,7 @@ tags:
 ---
 # This is biggest heading
 
-This statement rules your life daily . Yours and mine. Everyone's Inherently it means how great the romulans were ? . Yeah. A city like Rome , which was the centerpoint of such a golden age in Europe wasn't built in a day. It took efforts. Decades, ages of inquisitive minds, creative hands , built it brick by brick. Something like mathematics, no I mean not solving it. Creating it. Geometry algebra and all. From scratch. To  a structure and impartable form the whole golden age. 
+This statement rules your life daily . Yours and mine. Everyone's Inherently it :kissing_heart: means how great the romulans were ? . Yeah. A city like Rome , which was the centerpoint of such a golden age in Europe wasn't built in a day. It took efforts. Decades, ages of inquisitive minds, creative hands , built it brick by brick. Something like mathematics, no I mean not solving it. Creating it. Geometry algebra and all. From scratch. To  a structure and impartable form the whole golden age. 
 lorem30
 
 ## This is subheading an a para below it(lb)
@@ -42,7 +42,9 @@ explicabo distinctio harum consequatur minus adipisci! Autem eos quod, in doloru
 > This is a blockquote of random sayings gonna have a citation .<cite>I said it,on same line</cite>
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sunt quo, odit cumque esse laborum eos voluptatem tempore ipsam natus explicabo distinctio harum consequatur minus adipisci! Autem eos quod, in dolorum officia, magnam a at nihil adipisci aperiam iure, saepe voluptatum doloribus tenetur deserunt omnis ad ducimus tempore explicabo
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis quibusdam neque voluptatum laudantium sapiente magnam quia eius. Nam eum illum fuga culpa, voluptas quod dolorem, voluptates ipsum quaerat nobis quidem nemo corporis, sed aliquam praesentium expedita ratione voluptatum vero commodi? Culpa, tempora accusantium. Voluptates nostrum nemo quos repudiandae id? Fugiat.
+Lorem ipsum 
+<blockquote class="twitter-tweet"><p lang="hi" dir="ltr">Corona virus kuch bhi nahi hai, maine bachpan me apne sir se puri class me juein faila di thi.</p>&mdash; Swati Sachdeva (@swatisachdeva95) <a href="https://twitter.com/swatisachdeva95/status/1275055867897905153?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+dolor sit amet consectetur, adipisicing elit. Perferendis quibusdam neque voluptatum laudantium sapiente magnam quia eius. Nam eum illum fuga culpa, voluptas quod dolorem, voluptates ipsum quaerat nobis quidem nemo corporis, sed aliquam praesentium expedita ratione voluptatum vero commodi? Culpa, tempora accusantium. Voluptates nostrum nemo quos repudiandae id? Fugiat.
 ## This is heading just below a para
 
 This line is a two lines below the para .Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sunt quo, odit cumque esse laborum eos voluptatem tempore ipsam natus explicabo distinctio harum consequatur minus adipisci! Autem eos quod, in dolorum officia, magnam a at nihil adipisci aperiam iure, saepe voluptatum doloribus tenetur deserunt omnis ad ducimus tempore explicabo

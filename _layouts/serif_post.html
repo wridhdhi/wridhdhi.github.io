@@ -1,27 +1,28 @@
 --- 
 layout: default 
 ---
-
+{% assign image_exist = "no" %}
 <div class="post">
     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
 
 
-        <!-- <div class=" section-padding--double"> -->
-        <div class="post__header grid-small">
+        <div class="post__img shadow">
+
             {% if page.image %}
-            <div class="post__img">
-                <div>
-                    <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
-                </div>
+            {% assign image_exist = "yes" %}
+            <div class="post__img__container" image="{{ image_exist }}">
+                <div class="absolute-bg" style="background-image: url('{{ page.image }}');"></div>
             </div>
             {% endif %}
-            <h2 itemprop="name headline" class="post__header-style2">{{ page.title }}</h2>
+            <div class="post__header shadow ">
+                <div class="post__header__container">
+                    <h2 itemprop="name headline" class="post__header-style2">{{ page.title }}</h2>
 
-            <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
-            <!-- </div> -->
+                    <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
+                </div>
+            </div>
         </div>
-
 
         <div class="post__content style-2 section-padding">
             <div class="grid">

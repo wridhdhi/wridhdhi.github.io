@@ -101,6 +101,7 @@
 - [x] ~~font sizes fixes for `mq-xlarge`~~ instead of `mq-small` being 1.25em , see in lists.scss/post.scss 
 - [ ] Fix the fonts on the all the pages, and the margins and sizing.
 - [ ] Add the font awesome icons and smileys for parsing since its already embedded in CSS
+- [x] ~~added emojis see the list ~~
 - [x] ~~Remove and fix the background linear gradient.~~,TODO **found  good color, until then patterns and rest remaining**
 - [x] ~~Fix the monospace font size and highlighting to `Fira Code`~~ all margins and paddings done
 - [ ] use code highlighting using prism.js
@@ -109,21 +110,21 @@
 - [x] ~~Fix and set the heading margins and font sizes.~~
 - [x] ~~Fix white space around paragraph elements and invite more white space.~~
 - [x] ~~set padding of `p-3` class to `1.5 1 1 1 rem`~~
-- [ ] add the style to navbar li's `li a::hover,span::hover{text-decoration-line: underline; text-underline-position: under;}` sor underline effect
-- [ ] work on building a main showcase, with a greet message.
+- [x] ~~add the style to navbar li's `li a::hover,span::hover{text-decoration-line: underline; text-underline-position: under;}` sor underline effect~~, added a notch effect **BETTER UPDATE**
+- [x] ~~work on building a main showcase, with a greet message.~~ **DONE**
 - [ ] Work on a projects section.
 - [ ] build a sidebar and archives
 - [ ] For posts : build the side by side images and text layout 
-- [ ] Learn how the widing images is done and the positioning
+- [x] ~~Learn how the widing images is done and the positioning~~ j**ust use `width:100vw`**
 - [ ] put the post image as heading background-image and dim it,center it.
 - [x] ~~work on css of the scrollbar~~ NOT DOING IT NOW ADVANCED/UNECESSARY
 - [ ] Write an about me section properly.
-- [ ] learn about tweet an fb embeds.
-- [ ] edit the post content, try to ad elongated post-images for better masonry, not landscape images always
-- [ ] header bg-color `#ffc107`
-- [ ] add lines after headings [like this page][2]
-- [ ] Decide which headings to use for posts and their sizes.
-- [ ] fix the background image of each post to cover and also overlay the back background behind the heading font.(use pseudo elements `after before`) an also use `hover::after` to darken the font and using position.
+- [x] ~~learn about tweet an fb embeds.~~**VERY EASY DONE**
+- [x] ~~edit the post content, try to ad elongated post-images for better masonry, not landscape images always~~ **WORKS when height is greater than width**
+- [x] ~~header bg-color `#ffc107`~~
+- [x] ~~add lines after headings [like this page][2]~~ TOO much DECO,**LATER**
+- [x] ~~Decide which headings to use for posts and their sizes.~~ **done**
+- [x] ~~fix the background image of each post to cover and also overlay the back background behind the heading font.(use pseudo elements `after before`) an also use `hover::after` to darken the font and using position.~~ **Done using abolute position and mobile also**
 - [x] ~~add karla font.~~
 - [ ] add virtual scrollbars (optional)
 - [ ] Fix collections and move into a folder.
@@ -144,6 +145,9 @@
 - [ ] remove and fix the work thingy
 - [ ] **IMPORTANT**: Captions have to fixed
 - [ ] add a background of nets and checks to showcase
+- [ ] Adjust fonts for large screns using inspector at various sizes and change config.scss and typography.scss
+- [x] ~~changed related `flex-align:flex-start`~~ . Dunno why was this not done ?
+- [x] ~~fresh in zooming animaton effect~~ [GOOD GUIDANCE](https://stackoverflow.com/questions/44035457/using-css-transitions-to-create-a-specific-zoom-in-effect)
 
 
 
@@ -171,6 +175,7 @@
 10. Checkboxes don't work, they will be disabled beforehand,use just to show
 11. there are 3 layouts. default:`post` , mostly the helvetica layout :`sansSerif_post` , mostly the georgia layout :`serif_post` use in the collections post for the required layout.Even you can use for personal posts.
 12. captions are under images now, **press enter>just next line do a emph** text `* this is caption*` ->caption.
+13. `<mark>` highligts blocks of code.
 
 
 # Places to change collections
@@ -244,4 +249,38 @@ img {
 
 # Remmember Travis build
 never touch `Gemfile.lock`
+- use `bundle install` always
 also soon you might have to update the system.
+
+# Animation changes.
+- never use too slow, 300ms is decent.
+- the image expands more than the container shrinks this is important fr the effect to be proper.
+- notices the height and weidth scale slowley /fastly if there is too much difference.
+```scss
+ .post__link {
+        display: block;
+        color: $color-black;
+        &:hover {
+            // transform: scale(1.01);
+            .posts__img {
+                transform: scale(1.17);
+                .post__img__container {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+.post__img {
+        margin-bottom: 1em;
+        // background-color: $color-lightgrey;
+        transition: transform .3s ease;
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .post__img__container {
+            overflow: hidden;
+            transition: transform .3s ease;
+        }
+```
