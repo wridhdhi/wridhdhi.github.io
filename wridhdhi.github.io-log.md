@@ -169,6 +169,10 @@
 - [ ] Adjust fonts for large screns using inspector at various sizes and change config.scss and typography.scss
 - [x] ~~changed related `flex-align:flex-start`~~ . Dunno why was this not done ?
 - [x] ~~fresh in zooming animaton effect~~ [GOOD GUIDANCE](https://stackoverflow.com/questions/44035457/using-css-transitions-to-create-a-specific-zoom-in-effect)
+- [x] ~~LAYOUT FIXED,4colums~~
+- [x] ~~PAGINATION FIXED~~
+- [ ] to do pagination of categories/tags
+- [ ] to auto load on scroll effect.
 
 
 

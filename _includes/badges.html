@@ -1,32 +1,32 @@
 <h3 style="display: inline-block; ">
     {% for badge in post.badge %} {% case badge %} {% when 'code' %}
-    <span class="badge badge-primary">code
+    <span class="badge badge-blue">code
       {% when 'personal' %}
-    <span class="badge badge-danger">personal
+    <span class="badge badge-orange">personal
     
-      {% when 'life' %}
-    <span class="badge badge-success">life
+      {% when 'opinion' %}
+    <span class="badge badge-red">opinion
     
       {% when 'physics' %}
-    <span class="badge badge-primary">physics
+    <span class="badge badge-purple">physics
     
       {% when 'theory' %}
-      <span class="badge badge-info">theory
+      <span class="badge badge-grey">theory
 
       {% when 'simulation' %}
-    <span class="badge badge-warning">simulation
+    <span class="badge badge-black">simulation
     
       {% when 'quantum' %}
-    <span class="badge badge-danger">quantum
+    <span class="badge badge-lime">quantum
   
-      {% when 'algorithm' %}
-    <span class="badge badge-light">algorithm
- 
-      {% when 'computing' %}
-    <span class="badge badge-dark">computing/span>
-    
       {% when 'experiment' %}
-    <span class="badge badge-success">experiment
+    <span class="badge badge-pink">experiment
+ 
+      {% when 'art' %}
+    <span class="badge badge-green">art
+    
+      <!-- {% when 'opinion' %}
+    <span class="badge badge-red">opinion -->
     
       {% else %}
        

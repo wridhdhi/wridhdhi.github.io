@@ -1,0 +1,6 @@
+<div class="timeline-item" date-is='{{ post.date | date: "%b %-d, %Y" }}'>
+    <h2 class="timeline-h2"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <!-- <p>
+        <span itemprop="description"> ~ {{ post.collection }} || {{ post.content | strip_html | truncatewords: 30, "" }} ...
+    </p> -->
+</div>

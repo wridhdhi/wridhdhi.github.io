@@ -55,7 +55,7 @@ collections:
 # Pagination settings
 pagination:
   enabled: true
-  debug: true
+  debug: false
   per_page: 12
   permalink: '/page/:num/'
   title: ':title'
@@ -80,6 +80,15 @@ autopages:
     title: ''
     permalink: '/tag/:tag'
     
+# archive settings
+jekyll-archives:
+  enabled: 
+    - year
+    - month
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
 
 # Build settings
 markdown: kramdown
@@ -87,6 +96,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
   - jemoji
+  - jekyll-archives
 compress_html:
   clippings: all
   comments: all

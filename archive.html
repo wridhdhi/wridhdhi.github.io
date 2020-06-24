@@ -1,0 +1,30 @@
+--- 
+layout: collection_page
+title: Archives
+permalink: /archive.html
+pagination: 
+    enabled: true
+    collection: posts,physics,quantum
+    sort_field: 'date'
+    per_page: 99999999999
+    
+---
+
+
+<!-- The main content area -->
+<div class="timeline">
+    <div class="grid-xlarge">
+        <div class="timeline__container" itemscope itemtype="http://schema.org/Blog" >
+
+            {% for post in paginator.posts %}
+            
+            <!-- The tag below includes the markup for each post - partials/post-card.html -->
+            {% include archive_item.html %} 
+            
+            
+            {% endfor %}
+        </div>
+    </div>
+
+
+</div>
