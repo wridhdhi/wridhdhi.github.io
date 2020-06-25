@@ -1,0 +1,34 @@
+.containment {
+    @extend %auto-margin;
+    width: 100%;
+    max-width: $max-width--lg; //45em
+    @media (min-width: $mq-med) {
+        width: 75%;
+    }
+    @media (min-width: $mq-xlarge) {
+        width: 65%;
+    }
+    @media (min-width: $mq-xxxlarge) {
+        width: 50%;
+    }
+    @media screen and (min-width: $mq-med) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.grid-page {
+    margin {
+        left: 1em;
+        right: 1em;
+        bottom: 1em;
+    }
+}
+
+.sidebar {
+    min-height: 500px;
+    margin-left: 30px;
+    @media screen and (min-width: $mq-med) {
+        flex-basis: 40%;
+    }
+}

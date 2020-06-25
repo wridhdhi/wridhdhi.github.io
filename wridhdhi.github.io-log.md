@@ -13,6 +13,7 @@
 - [Updates in Lockdown 2020](#updates-in-lockdown-2020)
 - [Keep in mind for developing](#keep-in-mind-for-developing)
 - [Keep in mind while writing posts:](#keep-in-mind-while-writing-posts)
+- [Reminder !](#reminder-)
 - [Places to change collections](#places-to-change-collections)
 - [putting mathJaX and styling in head](#putting-mathjax-and-styling-in-head)
 - [Jekyll text highlight](#jekyll-text-highlight)
@@ -201,6 +202,20 @@
 11. there are 3 layouts. default:`post` , mostly the helvetica layout :`sansSerif_post` , mostly the georgia layout :`serif_post` use in the collections post for the required layout.Even you can use for personal posts.
 12. captions are under images now, **press enter>just next line do a emph** text `* this is caption*` ->caption.
 13. `<mark>` highligts blocks of code.
+
+
+
+# Reminder !
+1. there is only **about page**, with sidebar layout.
+2. Use serif_post / sansSerif_post layout for all documents.
+3. collection_page layout contains posts in cards.
+4. archive layout is UNUSED. The archive.html uses a derivative of the collection pages layout.
+5. index.html is special but sort of a collection page of all posts.
+6. physics/quantum/work/code collections use collection_page layout
+7. 404/subscribe I havent touched.
+8. also the tag/categories are untouched.
+
+
 
 
 # Places to change collections
