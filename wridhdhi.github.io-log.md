@@ -140,7 +140,7 @@
 - [x] ~~Learn how the widing images is done and the positioning~~ j**ust use `width:100vw`**
 - [ ] put the post image as heading background-image and dim it,center it.
 - [x] ~~work on css of the scrollbar~~ NOT DOING IT NOW ADVANCED/UNECESSARY
-- [ ] Write an about me section properly.
+- [x] ~~Write an about me section properly.~~
 - [x] ~~learn about tweet an fb embeds.~~**VERY EASY DONE**
 - [x] ~~edit the post content, try to ad elongated post-images for better masonry, not landscape images always~~ **WORKS when height is greater than width**
 - [x] ~~header bg-color `#ffc107`~~
@@ -165,7 +165,7 @@
 - [ ] Fix the sizing of layouts.to see 3 cols
 - [ ] fix the responsive navbar
 - [ ] remove and fix the work thingy
-- [ ] **IMPORTANT**: Captions have to fixed
+- [x] ~~**IMPORTANT**: Captions have to fixed~~ FIXED to the center, and width:fit-content
 - [ ] add a background of nets and checks to showcase
 - [ ] Adjust fonts for large screns using inspector at various sizes and change config.scss and typography.scss
 - [x] ~~changed related `flex-align:flex-start`~~ . Dunno why was this not done ?
@@ -174,6 +174,7 @@
 - [x] ~~PAGINATION FIXED~~
 - [ ] to do pagination of categories/tags
 - [ ] to auto load on scroll effect.
+- [ ] IFRAME AND FLEX-VID in .media.scss needs to be fixed. (temporarily fixed)
 
 
 
@@ -206,9 +207,10 @@
 
 
 # Reminder !
-1. there is only **about page**, with sidebar layout.
-2. Use serif_post / sansSerif_post layout for all documents.
-3. collection_page layout contains posts in cards.
+1. there is only **about page**
+2. , with sidebar layout.
+3. Use serif_post / sansSerif_post layout for all documents.
+4. collection_page layout contains posts in cards.
 4. archive layout is UNUSED. The archive.html uses a derivative of the collection pages layout.
 5. index.html is special but sort of a collection page of all posts.
 6. physics/quantum/work/code collections use collection_page layout

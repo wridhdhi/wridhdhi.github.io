@@ -6,6 +6,7 @@ description:
 categories: Logs
 image: /assets/images/7-Travis_GHPages/travis-main.png
 author: Wridhdhisom Karar
+comments: true
 badge: 
   - quantum
   - simulation
